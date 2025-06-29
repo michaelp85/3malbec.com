@@ -1,7 +1,11 @@
 <div class="bg-body dark:bg-darkmode-body">
-  {{ $image:= .Params.image }}
+  {{ $image := .Params.image }}
   {{ if $image }}
-    {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mb-6 w-full rounded") }}
+    {{ with resources.Get $image }}
+      {{ with .Fill "800x450 center" }}
+        <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="mb-6 w-full rounded object-cover" />
+      {{ end }}
+    {{ end }}
   {{ end }}
   <h4 class="mb-3">
     <a href="{{ .RelPermalink }}">
