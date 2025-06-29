@@ -2,8 +2,10 @@
 title: "Hi, Jessica & Michael Pasqualone Here!"
 meta_title: "About"
 description: "About Jessica & Michael Pasqualone, and our house build"
-image: "/images/avatar.png"
+image: "/images/jessica_and_michael.jpg"
 draft: false
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. Fugit voluptatibus perspiciatis assumenda nulla ad nihil, omnis vel, doloremque sit quam autem optio maiores, illum eius facilis et quo consectetur provident dolor similique! Enim voluptatem dicta expedita veritatis repellat dolorum impedit, provident quasi at.
+Hi, we're Jessica and Michael — a couple of wine-loving, energy-efficient dreamers building our forever home one decision (and debate) at a time. We swapped late-night Netflix for thermal insulation specs and building code PDFs, and now spend weekends comparing window seals like connoisseurs compare Shiraz.
+
+This blog is our way of documenting the journey: the highs, the hiccups, and the inevitable "we should've known better" moments. Whether you're here for passive house tips, building inspiration, or just to see if we survive the process with our marriage intact — welcome!
