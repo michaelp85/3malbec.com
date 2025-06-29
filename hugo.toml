@@ -2,7 +2,7 @@
 # The base URL of your site (required). This will be prepended to all relative URLs.
 baseURL = "https://michaelp85.github.io/3malbec.com/"
 # Title of your website (required).
-title = "3 Malbec Build Blog"
+title = "3 Malbec House Build Blog"
 # Your theme name
 theme = "hugoplate"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
@@ -71,7 +71,7 @@ resampleFilter = "Lanczos"
 ############################ Caches ##############################
 [caches]
 [caches.images]
-dir = ":cacheDir/images"
+dir = ":resourceDir/_gen"
 maxAge = "720h"
 
 [caches.assets]
