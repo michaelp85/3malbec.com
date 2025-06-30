@@ -11,13 +11,24 @@ name = "About"
 url = "/about"
 weight = 3
 
+[[main]]
+name = "Resources"
+url = "/Resources"
+weight = 4
+
 # footer menu
 [[footer]]
 name = "About"
 url = "/about"
 weight = 1
 
+# footer menu
+[[footer]]
+name = "Resources"
+url = "/resources"
+weight = 2
+
 [[footer]]
 name = "Privacy Policy"
 url = "/privacy-policy"
-weight = 2
+weight = 3

@@ -1,0 +1,9 @@
+{{ with .Page.GitInfo }}
+  <p class="text-sm text-gray-500">
+    Last updated: {{ .AuthorDate.Format "Jan 2, 2006 at 3:04 PM" }}
+  </p>
+{{ else }}
+  <p class="text-sm text-gray-500">
+    Last updated: {{ (.Page.Lastmod | default .Page.Date).Format "Jan 2, 2006 at 3:04 PM" }}
+  </p>
+{{ end }}

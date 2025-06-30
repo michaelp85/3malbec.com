@@ -31,4 +31,4 @@ We had Paul from [Red Gum Tree Services](https://redgumtreeservices.com.au/) cre
 
 #### Image Gallery
 
-{{< gallery dir="images/landscaping/the-dying-tree" class="" webp="true" command="Fit" option="" zoomable="true" >}}
+{{< gallery dir="images/landscaping/the-dying-tree" class="" width="600" height="600" quality="100" webp="true" command="Fit" option="" zoomable="true" >}}
