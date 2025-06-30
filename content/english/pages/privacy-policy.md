@@ -1,33 +1,45 @@
 ---
-title: "Privacy"
+title: "Privacy Policy"
 # meta title
-meta_title: ""
+meta_title: "Privacy Policy"
 # meta description
-description: "This is meta description"
+description: "Read the privacy policy for this personal website. Learn what minimal data is collected, including IP address and browser details, and how it's used securely and responsibly."
 # save as draft
 draft: false
 ---
 
-#### Responsibility of Contributors
+This Website ("3malbec.com") is a personal project operated by Michael Pasqualone ("I", "me", or "my"). I value your privacy and aim to be transparent about the minimal data this website collects.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+#### What Information Is Collected
 
-pretium, aliquam sit. Praesent elementum magna amet, tincidunt eros, nibh in leo. Malesuada purus, lacus, at aliquam suspendisse tempus. Quis tempus amet, velit nascetur sollicitudin. At sollicitudin eget amet in. Eu velit nascetur sollicitudin erhdfvssfvrgss eget viverra nec elementum. Lacus, facilisis tristique lectus in.
+When you visit this Website, basic technical information is automatically collected by the web server. This includes:
 
-#### Gathering of Personal Information
+- IP address
+- Browser type and version
+- Operating system and device type
+- Referring website (if applicable)
+- Date and time of access
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+This information is collected automatically by standard server logs and analytics tools for the sole purpose of understanding Website usage and ensuring performance and security.
 
-#### Protection of Personal- Information
+#### How Your Information Is Used
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus.
+The collected information is used to:
 
-Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat
+- Monitor site traffic and performance
+- Diagnose technical issues
+- Prevent spam and abuse
+- Improve the user experience
 
-#### Privacy Policy Changes
+I do not use this data to personally identify you, and no attempts are made to do so.
 
-1. Sll the Themefisher items are designed to be with the latest , We check all
-2. comments that threaten or harm the reputation of any person or organization
-3. personal information including, but limited to, email addresses, telephone numbers
-4. Any Update come in The technology Customer will get automatic Notification.
+#### Sharing Of Information
+
+I do not sell, rent, or share your data with third parties, except:
+
+- When required by law or legal process
+- If necessary to protect the Site from malicious activity
+
+#### Cookies
+
+This Website does not use tracking cookies or any other method of user profiling. Some basic session cookies may be used if required for technical functionality, but they are not used for tracking or advertising.
