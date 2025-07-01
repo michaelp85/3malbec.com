@@ -62,8 +62,8 @@ content = "You must replace the **baseURL** in **hugo.toml** file when deploying
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
-keywords = ["Boilerplate", "Hugo"]
-description = "The build blog for 3 Malbec, Murrumbateman"
+keywords = ["passive house", "murrumbateman", "sustainable building", "energy efficient home", "custom home build", "timber frame", "colorbond roof", "anticon blanket", "waffle pod slab", "3malbec", "house construction", "home automation", "canberra", "blog", "australian passive house"]
+description = "We're building a Passive House in Murrumbateman, NSW in the Canberra region, and documenting every nail, slab, and argument along the way."
 author = "Miichael Pasqualone"
 #twitter = "zeon_studio"
 image = "images/og-image.png"
