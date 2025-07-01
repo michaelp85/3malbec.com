@@ -1,10 +1,18 @@
 <div class="bg-body dark:bg-darkmode-body">
-  {{ $image := .Params.image }}
-  {{ if $image }}
-    {{ with resources.Get $image }}
-      {{ with .Fill "800x450 center" }}
-        <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="mb-6 w-full rounded object-cover" />
-      {{ end }}
+  {{ $imagePath := .Params.image }}
+  {{ if $imagePath }}
+    {{ $imagePath = strings.TrimPrefix "/" $imagePath }}
+    {{ with resources.Get $imagePath }}
+      {{ $resized := .Resize "600x450 webp q75" }}
+      <a href="{{ $.RelPermalink }}">
+        <img 
+          src="{{ $resized.RelPermalink }}" 
+          alt="{{ $.Title }}" 
+          class="mb-6 w-full rounded object-cover" 
+          loading="lazy" 
+          decoding="async"
+        />
+      </a>
     {{ end }}
   {{ end }}
   <h4 class="mb-3">

@@ -4,7 +4,7 @@ slug: 'the-dying-tree'
 meta_title: ""
 description: "this is meta description"
 date: 2020-12-13T05:00:00Z
-image: "/images/2020_12_13-Yellowbox_Tree.jpeg"
+image: "images/2020_12_13-Yellowbox_Tree.jpeg"
 categories: ["landscaping", "council"]
 author: "Michael"
 tags: ["landscaping"]
