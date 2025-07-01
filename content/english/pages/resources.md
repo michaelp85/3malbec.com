@@ -12,7 +12,12 @@ Here is a list of resources that I've used for this house build project. {{< las
 
 #### Websites
 
-- [Raincoat - Open Haus / Passive House Blog](https://open-haus.weebly.com/home/the-raincoat)] 
+- [Raincoat - Open Haus / Passive House Blog](https://open-haus.weebly.com/home/the-raincoat)
+- [TheSketchUpEssentials](https://www.youtube.com/@Thesketchupessentials) - Great snippets of information for everything Sketchup, tips n tricks and tutorials on plugins.
+- [SketchUp School](https://www.youtube.com/@SketchUpSchool) - More formal Sketchup training, good begineer resources
+
+##### Niche Web Resources
+- [Gyrock Levels of Finish](https://www.gyprock.com.au/solutions/levels-of-finish) - For understanding and terminology of levels of plasterboard/gyprock finishing. 
 
 #### Applications & Apps
 
@@ -26,3 +31,9 @@ Here is a list of resources that I've used for this house build project. {{< las
 #### Books
 
 - [Rawlinsons Construction Cost Guide](https://www.rawlhouse.com.au/)
+
+#### Resources & Sevices
+
+- [EzyStrut Cable & Pipe Supports](https://www.ezystrut.com.au/) - Cable trays and supports
+- Richard Miller BSc (Ag.) from Land Capability Services (rgmiller@me.com) - For Site & Soil Assessments, On-site Effluent Disposal Engineering
+- [Red Gum Tree Services](https://redgumtreeservices.com.au/) - Tree health consultation, felling & removal, etc.
