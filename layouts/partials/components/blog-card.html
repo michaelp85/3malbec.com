@@ -9,8 +9,8 @@
           src="{{ $resized.RelPermalink }}" 
           alt="{{ $.Title }}" 
           class="mb-6 w-full rounded object-cover" 
-          loading="lazy" 
-          decoding="async"
+          height="{{ $resized.Height }}"
+          width="{{ $resized.Width }}"
         />
       </a>
     {{ end }}
