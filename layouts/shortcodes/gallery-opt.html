@@ -1,0 +1,51 @@
+{{/*
+  Hugo shortcode for an optimized image gallery using GLightbox,
+  with optional captions matched via front matter.
+
+  Usage in markdown:
+  {{< gallery-opt dir="images/gallery/the-dying-tree" >}}
+
+  And in front matter:
+  gallery:
+    - file: "01.jpeg"
+      caption: "A majestic deathtrap"
+*/}}
+
+{{ $dir := .Get "dir" }}
+{{ $images := resources.Match (printf "%s/*" $dir) }}
+{{ $captions := .Page.Params.gallery }}
+
+<div class="gallery zoomable">
+  {{ range $images }}
+    {{ if eq .MediaType.MainType "image" }}
+      {{ $thumb := .Fit "600x600" }}
+      {{ $zoom := .Fit "1600x1600" }}
+      {{ $imgFile := lower (path.Base .Name) }}
+
+      {{ $caption := "" }}
+      {{ range $captions }}
+        {{ if eq (lower .file) $imgFile }}
+          {{ $caption = .caption }}
+        {{ end }}
+      {{ end }}
+      <div class="gallery-item" >
+      <a 
+        href="{{ $zoom.RelPermalink }}" 
+        class="glightbox"
+        data-gallery="gallery"
+        style="display: block;"
+        {{ with $caption }}data-title="{{ . | htmlEscape }}"{{ end }}
+      >
+        <img 
+          src="{{ $thumb.RelPermalink }}" 
+          alt="{{ $imgFile }}" 
+          class="rounded shadow w-full h-auto object-cover"
+          loading="lazy" 
+          decoding="async"
+          style="margin: 0px; opacity: 1;"
+        />
+      </a>
+      </div>
+    {{ end }}
+  {{ end }}
+</div>

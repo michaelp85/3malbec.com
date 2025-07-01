@@ -10,6 +10,15 @@ author: "Michael"
 tags: ["landscaping"]
 summary: "We recently had to remove a dead tree from our property after confirming with two arborists that it was beyond saving. While it was a tough decision, the tree posed safety risks and couldn’t be revived."
 draft: false
+gallery:
+  - file: "01.jpeg"
+    caption: "Red Gum Tree Services felling the tree."
+  - file: "02.jpeg"
+    caption: "The freshly cut stump left behind after the tree was removed."
+  - file: "03.jpeg"
+    caption: "The piles of firewood left over after the tree was removed."
+  - file: "05.jpeg"
+    caption: "This branch that Jess is standing will eventually die and fall."
 ---
 
 Dealing with a dying tree. When we first bought the block, this old tree was already showing signs of decline - with it's lifeless limbs and bare canopy. I kept an eye on it for a few months but it became increasingly clear it was in distress and not good health. While we loved the idea of keeping it for it's shade, birdlife, and character after speaking with both a slab engineer and a telephone call with a arborist it had crossed the line from "rustic charm" to "safety hazard".
@@ -31,4 +40,4 @@ We had Paul from [Red Gum Tree Services](https://redgumtreeservices.com.au/) cre
 
 #### Image Gallery
 
-{{< gallery dir="images/landscaping/the-dying-tree" class="" width="600" height="600" quality="100" webp="true" command="Fit" option="" zoomable="true" >}}
+{{< gallery-opt dir="images/landscaping/the-dying-tree" >}}
