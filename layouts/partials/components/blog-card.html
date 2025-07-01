@@ -8,9 +8,11 @@
         <img 
           src="{{ $resized.RelPermalink }}" 
           alt="{{ $.Title }}" 
-          class="mb-6 w-full rounded object-cover" 
+          class="mb-6 w-full rounded object-cover"
           height="{{ $resized.Height }}"
           width="{{ $resized.Width }}"
+          loading="eager"
+          fetchpriority="high"
         />
       </a>
     {{ end }}
