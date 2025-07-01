@@ -1,1 +1,8 @@
 /* Add your own custom styles here */
+.glightbox-clean .gslide-description {
+    background: #1D3F35 !important;
+}
+
+.glightbox-clean .gslide-title {
+    color: #fff !important;
+}
