@@ -6,7 +6,7 @@
   {{ if $imagePath }}
     {{ $imagePath = strings.TrimPrefix "/" $imagePath }}
     {{ with resources.Get $imagePath }}
-      {{ $resized := .Resize "600x450 webp q70" }}
+      {{ $resized := .Resize "410x308 webp q60" }}
       <a href="{{ $page.RelPermalink }}">
         <img 
           src="{{ $resized.RelPermalink }}" 
