@@ -8,10 +8,11 @@
         <!-- blog posts -->
         <div class="lg:col-8">
           <div class="row">
-            {{ $paginator := .Paginate (where .Site.RegularPages "Section" "blog") }}
-            {{ range $paginator.Pages }}
+            {{ $pages := sort (where .Site.RegularPages "Section" "blog") "Date" "desc" }}
+            {{ $paginator := .Paginate $pages }}
+            {{ range $index, $page := $paginator.Pages }}
               <div class="md:col-6 mb-14">
-                {{ partial "components/blog-card" . }}
+                {{ partial "components/blog-card" (dict "Page" $page "Index" $index) }}
               </div>
             {{ end }}
           </div>

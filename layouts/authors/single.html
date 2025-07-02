@@ -37,9 +37,9 @@
 
       <div class="row pb-16 pt-14">
         {{ $filterByAuthor := where site.RegularPages "Params.author" "==" .Title }}
-        {{ range $filterByAuthor }}
+        {{ range $index, $page := $filterByAuthor }}
           <div class="md:col-6 lg:col-4 mb-12">
-            {{ partial "components/blog-card" . }}
+            {{ partial "components/blog-card" (dict "Page" $page "Index" $index) }}
           </div>
         {{ end }}
       </div>

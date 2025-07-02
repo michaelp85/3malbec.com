@@ -1,32 +1,35 @@
+{{ $page := .Page }}
+{{ $index := .Index }}
+
 <div class="bg-body dark:bg-darkmode-body">
-  {{ $imagePath := .Params.image }}
+  {{ $imagePath := $page.Params.image }}
   {{ if $imagePath }}
     {{ $imagePath = strings.TrimPrefix "/" $imagePath }}
     {{ with resources.Get $imagePath }}
       {{ $resized := .Resize "600x450 webp q70" }}
-      <a href="{{ $.RelPermalink }}">
+      <a href="{{ $page.RelPermalink }}">
         <img 
           src="{{ $resized.RelPermalink }}" 
-          alt="{{ $.Title }}" 
+          alt="{{ .Title }}" 
           class="mb-6 w-full rounded object-cover"
           height="{{ $resized.Height }}"
           width="{{ $resized.Width }}"
-          loading="eager"
-          fetchpriority="high"
+          loading="{{ if lt $index 2 }}eager{{ else }}lazy{{ end }}"
+          {{ if lt $index 2 }}fetchpriority="high"{{ end }}
         />
       </a>
     {{ end }}
   {{ end }}
   <h4 class="mb-3">
-    <a href="{{ .RelPermalink }}">
-      {{ .Title }}
+    <a href="{{ $page.RelPermalink }}">
+      {{ $page.Title }}
     </a>
   </h4>
-  {{ $categories:= .Params.categories }}
+  {{ $categories:= $page.Params.categories }}
   {{ if $categories }}
     <ul class="mb-4">
       <li class="mr-4 inline-block">
-        <i class="fa-regular fa-clock mr-1"></i> {{ time.Format ":date_medium" .PublishDate }}
+        <i class="fa-regular fa-clock mr-1"></i> {{ time.Format ":date_medium" $page.PublishDate }}
       </li>
       <li class="mr-4 inline-block">
         <i class="fa-regular fa-folder mr-1"></i>
@@ -42,8 +45,8 @@
       </li>
     </ul>
   {{ end }}
-  <p class="mb-6">{{ .Summary | plainify }}</p>
-  <a class="btn btn-outline-primary btn-sm" href="{{ .RelPermalink }}">
+  <p class="mb-6">{{ $page.Summary | plainify }}</p>
+  <a class="btn btn-outline-primary btn-sm" href="{{ $page.RelPermalink }}">
     {{ T "read_more" }}
   </a>
 </div>

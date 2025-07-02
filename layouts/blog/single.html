@@ -82,9 +82,9 @@
         <div class="section pb-0">
           <h2 class="h3 mb-12">{{ T "related_posts" }}</h2>
           <div class="row">
-            {{ range . }}
+            {{ range $index, $page := . }}
               <div class="lg:col-4 md:col-6 mb-14">
-                {{ partial "components/blog-card" . }}
+                {{ partial "components/blog-card" (dict "Page" $page "Index" $index) }}
               </div>
             {{ end }}
           </div>

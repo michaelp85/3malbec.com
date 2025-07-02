@@ -72,6 +72,13 @@ home = ["HTML", "RSS", "WebAppManifest", "SearchIndex"]
 quality = 80
 resampleFilter = "Lanczos"
 
+## Minify
+
+[minify.tdewolff.js]
+keepVarNames = false
+precision = 0
+version = 0
+
 ############################ Caches ##############################
 [caches]
 [caches.images]

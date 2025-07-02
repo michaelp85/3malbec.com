@@ -8,9 +8,9 @@
         <!-- blog posts -->
         <div class="lg:col-8">
           <div class="row">
-            {{ range .Data.Pages }}
+            {{ range $index, $page := .Data.Pages }}
               <div class="md:col-6 mb-14">
-                {{ partial "components/blog-card" . }}
+                {{ partial "components/blog-card" (dict "Page" $page "Index" $index) }}
               </div>
             {{ end }}
           </div>

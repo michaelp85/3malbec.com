@@ -64,7 +64,7 @@ content = "You must replace the **baseURL** in **hugo.toml** file when deploying
 [metadata]
 keywords = ["passive house", "murrumbateman", "sustainable building", "energy efficient home", "custom home build", "timber frame", "colorbond roof", "anticon blanket", "waffle pod slab", "3malbec", "house construction", "home automation", "hugo website", "blog", "australian passive house"]
 description = "Hugo & Tailwindcss Starter"
-author = "michaelp"
+#author = "michaelp"
 # twitter = "zeon_studio"
 image = "images/og-image.png"
 
