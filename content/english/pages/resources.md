@@ -31,6 +31,7 @@ Here is a list of resources that I've used for this house build project. {{< las
 #### Books
 
 - [Rawlinsons Construction Cost Guide](https://www.rawlhouse.com.au/)
+- [Building Your Own Home by George Wilkie](https://au.newhollandpublishers.com/building-your-own-home-9781742572161.html)
 
 #### Resources & Sevices
 
