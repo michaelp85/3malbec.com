@@ -12,7 +12,7 @@
             {{ $paginator := .Paginate $pages }}
             {{ range $index, $page := $paginator.Pages }}
               <div class="md:col-6 mb-14">
-                {{ partial "components/blog-card" (dict "Page" $page "Index" $index) }}
+                {{ partial "components/blog-card" $page }}
               </div>
             {{ end }}
           </div>

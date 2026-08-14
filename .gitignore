@@ -10,9 +10,7 @@ builds
 package-lock.json
 public
 resources
-.hugo_build.lock
 jsconfig.json
-hugo_stats.json
-isableFastRender
 go.sum
 yarn.lock
+.hugo_build.lock

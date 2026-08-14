@@ -8,7 +8,7 @@ theme = "hugoplate"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
 timeZone = "Australia/Canberra"
 # post excerpt
-summaryLength = 10 # see https://gohugo.io/content-management/excerpts/
+summaryLength = 10 # see https://gohugo.io/content-management/summaries/#automatic-summary
 # disable language
 disableLanguages = [
 ] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
@@ -20,12 +20,9 @@ defaultContentLanguageInSubdir = false
 enableGitInfo = true
 
 ########################### Services #############################
-# [services]
-# [services.googleAnalytics]
-# ID = 'G-MEASUREMENT_ID' # see https://gohugo.io/templates/internal/#configure-google-analytics
-
-#[services.disqus]
-#shortname = 'themefisher-template' # we use disqus to show comments in blog posts . To install disqus please follow this tutorial https://portfolio.peter-baumgartner.net/2017/09/10/how-to-install-disqus-on-hugo/
+#[services]
+#[services.googleAnalytics]
+#ID = 'G-MEASUREMENT_ID' # see https://gohugo.io/templates/internal/#configure-google-analytics
 
 ########################## Permalinks ############################
 [permalinks.page]
@@ -63,7 +60,11 @@ target = 'assets/notwatching/hugo_stats.json'
 
 ############################# Outputs ############################
 [outputs]
-home = ["HTML", "RSS", "WebAppManifest", "SearchIndex"]
+home     = ["HTML", "RSS", "WebAppManifest", "SearchIndex", "llms", "llmsfull", "md"]
+page     = ["HTML", "RSS", "md"]
+section  = ["HTML", "RSS", "md"]
+taxonomy = ["HTML", "RSS", "md"]
+term     = ["HTML", "RSS", "md"]
 
 ############################# Imaging ############################
 [imaging]
@@ -71,13 +72,6 @@ home = ["HTML", "RSS", "WebAppManifest", "SearchIndex"]
 # Default JPEG or WebP quality setting. Default is 75.
 quality = 80
 resampleFilter = "Lanczos"
-
-## Minify
-
-[minify.tdewolff.js]
-keepVarNames = false
-precision = 0
-version = 0
 
 ############################ Caches ##############################
 [caches]
@@ -127,14 +121,16 @@ notAlternative = true
 ############################# Plugins ##############################
 
 # CSS Plugins
-#[[params.plugins.css]]
-#link = "plugins/swiper/swiper-bundle.css"
-#lazy = true
 [[params.plugins.css]]
-link = "plugins/glightbox/glightbox.css"
+link = "plugins/swiper/swiper-bundle.css" # https://github.com/gethugothemes/hugo-modules/tree/master/gallery-slider
 lazy = true
 [[params.plugins.css]]
-link = "plugins/font-awesome/v6/brands.css"
+link = "plugins/glightbox/glightbox.css" 
+# https://github.com/gethugothemes/hugo-modules/tree/master/gallery-slider
+lazy = true
+[[params.plugins.css]]
+link = "plugins/font-awesome/v6/brands.css" 
+# https://github.com/gethugothemes/hugo-modules/tree/master/icons/font-awesome
 lazy = true
 [[params.plugins.css]]
 link = "plugins/font-awesome/v6/solid.css"
@@ -145,29 +141,35 @@ lazy = true
 
 # JS Plugins
 [[params.plugins.js]]
-link = "js/search.js"
+link = "js/search.js" # https://github.com/gethugothemes/hugo-modules/tree/master/search
 lazy = false
-#[[params.plugins.js]]
-#link = "plugins/swiper/swiper-bundle.js"
-#lazy = false
-#[[params.plugins.js]]
-#link = "plugins/cookie.js"
-#lazy = false
 [[params.plugins.js]]
-link = "plugins/glightbox/glightbox.js"
+link = "plugins/swiper/swiper-bundle.js" 
+# https://github.com/gethugothemes/hugo-modules/tree/master/gallery-slider
+lazy = false
+[[params.plugins.js]]
+link = "plugins/glightbox/glightbox.js" # https://github.com/gethugothemes/hugo-modules/tree/master/gallery-slider
 lazy = true
 [[params.plugins.js]]
-link = "js/gallery-slider.js"
+link = "js/gallery-slider.js" # https://github.com/gethugothemes/hugo-modules/tree/master/gallery-slider
 lazy = true
-#[[params.plugins.js]]
-#link = "js/accordion.js"
-#lazy = true
-#[[params.plugins.js]]
-#link = "js/tab.js"
-#lazy = true
-#[[params.plugins.js]]
-#link = "js/modal.js"
-#lazy = true
-# [[params.plugins.js]]
-# link = "plugins/youtube-lite.js"
-# lazy = true
+[[params.plugins.js]]
+link = "plugins/cookie.js" # https://github.com/gethugothemes/hugo-modules/tree/master/components/cookie-consent
+lazy = false
+[[params.plugins.js]]
+link = "js/accordion.js" # https://github.com/gethugothemes/hugo-modules/tree/master/accordion
+lazy = true
+[[params.plugins.js]] 
+link = "js/tab.js" # https://github.com/gethugothemes/hugo-modules/tree/master/accordion
+lazy = true
+[[params.plugins.js]]
+link = "js/modal.js" # https://github.com/gethugothemes/hugo-modules/tree/master/modal
+lazy = true
+[[params.plugins.js]]
+link = "plugins/youtube-lite.js" # https://github.com/gethugothemes/hugo-modules/tree/master/videos
+lazy = true
+
+[security]
+  enableInlineShortcodes = true
+[security.exec]
+  allow = ['^(dart-)?sass(-embedded)?$', '^go$', '^git$', '^node$', '^postcss$', '^tailwindcss$']
