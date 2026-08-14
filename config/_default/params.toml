@@ -37,9 +37,21 @@ preloader = "" # use jpg, png, svg or gif format.
 
 # Navigation button
 [navigation_button]
-enable = false
-label = "get a quote"
-link = "contact"
+enable = true
+label = "Github"
+link = "https://github.com/zeon-studio/hugoplate"
+
+# LLMs Configuration
+# LLMs module: https://github.com/gethugothemes/hugo-modules/tree/master/llms-txt
+[llms]
+# Set to false to disable /llms.txt generation
+generate_llms_txt = true
+# Set to false to disable /llms-full.txt generation
+generate_llms_full_txt = true
+# Limit to specific paths (e.g. "/about/", "/blog/*", "/blog/**"). Empty = all pages.
+include = []
+# Exclude specific paths (same wildcard formats as include). Include takes priority on conflicts.
+exclude = []
 
 # search
 # search module: https://github.com/gethugothemes/hugo-modules/tree/master/search
@@ -54,10 +66,10 @@ show_categories = true
 
 # announcement
 # announcement module: https://github.com/gethugothemes/hugo-modules/tree/master/components/announcement
-[announcement]
-enable = false
-expire_days = 7
-content = "You must replace the **baseURL** in **hugo.toml** file when deploying, you can manage this announcement from the **params.toml** file."
+#[announcement]
+#enable = false
+#expire_days = 7
+#content = "<span class='text-center block'>♥️ Loving Hugoplate? <a class='underline' href='https://github.com/zeon-studio/hugoplate' target='_blank' rel='noopener'>Please ⭐️ on Github</a></span>"
 
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
@@ -65,7 +77,6 @@ content = "You must replace the **baseURL** in **hugo.toml** file when deploying
 keywords = ["passive house", "murrumbateman", "sustainable building", "energy efficient home", "custom home build", "timber frame", "colorbond roof", "anticon blanket", "waffle pod slab", "3malbec", "house construction", "home automation", "canberra", "blog", "australian passive house"]
 description = "We're building a Passive House in Murrumbateman, NSW in the Canberra region, and documenting every nail, slab, and argument along the way."
 author = "Michael Pasqualone"
-#twitter = "zeon_studio"
 image = "images/og-image.png"
 
 
@@ -98,9 +109,9 @@ sidebar = ["categories", "tags"]
 # google map
 [google_map]
 enable = false
-map_api_key = ""
-map_latitude = ""
-map_longitude = ""
+map_api_key = "AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"
+map_latitude = "51.5223477"
+map_longitude = "-0.1622023"
 map_marker = "images/marker.png"
 
 
@@ -110,3 +121,9 @@ enable = false
 # mailchimp subsciption
 mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
 mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074"
+
+# OpenRemark Comments
+[open_remark]
+enable = true
+site_key = "cmq51sse6000504l2761vcywi"                 # your site key from the OpenRemark dashboard
+embed_url = "https://open-remark.zeon.studio/embed.js" # OpenRemark embed.js URL | Make sure it didn't change
