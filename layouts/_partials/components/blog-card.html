@@ -10,7 +10,7 @@
   {{ if $imagePath }}
     {{ $imagePath = strings.TrimPrefix "/" $imagePath }}
     {{ with resources.Get $imagePath }}
-      {{ $resized := .Resize "410x308 webp q60" }}
+      {{ $resized := .Fill "410x140 Smart webp q60" }}
       <a href="{{ $page.RelPermalink }}">
         <img 
           src="{{ $resized.RelPermalink }}" 
@@ -53,4 +53,5 @@
   <a class="btn btn-outline-primary btn-sm" href="{{ $page.RelPermalink }}">
     {{ T "read_more" }}
   </a>
+  <hr style="color: #333; margin-top: 22px;">
 </div>

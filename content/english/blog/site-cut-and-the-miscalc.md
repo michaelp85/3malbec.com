@@ -5,15 +5,12 @@ meta_title: ""
 description: "Everything under the slab: drainage, hydronic pipework, and the concrete that covers it."
 date: 2026-07-13T12:00:00Z
 image: "images/site-cut/DJI_0905.JPEG"
-categories: ["slab", "insulation", "hydronics", "heating"]
+categories: ["earthmoving"]
 author: "Michael"
-tags: ["slab"]
+tags: ["earthmoving"]
 summary: "How hard could it be to calculate how much soil will be left over?"
 draft: false
 ShowToc: false
-gallery:
-  - file: "01.jpeg"
-    caption: "Red Gum Tree Services felling the tree."
 ---
 
 ## We Start & We (I) Miscalcuate 
