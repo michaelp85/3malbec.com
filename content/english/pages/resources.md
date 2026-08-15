@@ -23,6 +23,7 @@ Here is a list of resources that I've used for this house build project. {{< las
 
 - Sketchup & Layout - For drafting, site plans and modeling.
 - Bluebean Revu - For quantity takeoffs & estimating, area calculations.
+- Kubla Cubed - For site/cut planning (just note, it does in-situ calculations only, you need to calculate your own expanded cut)
 
 ##### Plugins
 

@@ -9,6 +9,11 @@ weight = 1
 [[main]]
 name = "About"
 url = "/about"
+weight = 2
+
+[[main]]
+name = "Budget"
+url = "/budget"
 weight = 3
 
 [[main]]
@@ -29,6 +34,11 @@ url = "/resources"
 weight = 2
 
 [[footer]]
+name = "Website Details"
+url = "/website-details"
+weight = 3
+
+[[footer]]
 name = "Privacy Policy"
 url = "/privacy-policy"
-weight = 3
+weight = 4
