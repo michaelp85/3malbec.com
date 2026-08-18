@@ -73,7 +73,7 @@ The heat source is still open, and comes down to how much solar we get in. Hit t
 
 I have extensive as-built documentation detailing exactly where every pipe is, including a 3D survey georeferenced to MGA2020 Zone 55 — the same coordinate system as the surveyor's setout. A surveyor picked up five GCPs on the property and I targeted them permanently, so I can re-fly the site any time and have every survey land in the same coordinate space as the last.
 
-Here is the 3D model in Pix4DMatic. I also have the same for stormwater & drainage, and few others.
+Here is the 3D model in Pix4DMatic. I also have the same for stormwater & drainage, and using it to track our cut/fill volumes.
 {{< image src="images/slab/Hydronic_Survey.jpg" caption="Photogrammertyu survey of hydronic heating pipes & locations" position="center" command="fill" option="q100" class="img-fluid" title="Excess soil" webp="false" >}}
 
 ## Electronics & Monitoring
@@ -90,13 +90,24 @@ Note to self: Need to get a hold of the delivery dockets.
 
 ## Challenges Here
 
+* The flexible conduit runs for kitchen island was initially buried. I accidently noticed whilst chipping away the excess concrete on edges, luckily caught it in time to be able to get a crowbar in and fish it out.
+
 ## Tips and Tricks
 
 * Organise/pay for concrete yourself, you save big here! Our concrete bill was TBC.
+* Monitor the pour, and keep a keen eye on any conduit, especially flexible conduits penetrations - ensure they don't get buried during the pour!
 
 ## Protection
 
-Slab was wrapped
+After the slab was poured, it was wrapped and protected with film and excess EPS foam on edges of the slab that were in the direction of the rain. This should greatly improve the surface quality, prevent cracking and allow the concrete to achive it's rated strength.
+
+I was monitoring local conditions, and conditions under the film pretty closely. Target window ended up being 11 days wrapped.
+
+{{< image src="images/slab/DJI_0679.JPEG" caption="Wrapped slap after the pour" position="center" command="fill" option="q100" class="img-fluid" title="Wrapped & protected slab" webp="false" >}}
+
+After being protected for 11 days, this is what it looked like after I removed the wrapping; it's pretty much perfect.
+{{< image src="images/slab/IMG_2057.JPEG" caption="First look at slap after unwrapping it after 11 days" position="center" command="fill" option="q100" class="img-fluid" title="First look at unwrapped slab" webp="false" >}}
+
 
 ## Image Gallery
 
