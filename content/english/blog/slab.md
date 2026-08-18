@@ -24,12 +24,12 @@ I did all the trenching, electrical conduit runs, coordination between trades, i
 
 We started the site cut on 9th July, and almost immediately I realised there was an issue with my site cut & fill calculations. I'd originally calculated we'd end up with approximately 80sqm of excess cut material, however very early on we'd already ended up with this:
 
-{{< image src="images/slab/IMG_0872.JPEG" caption="Early indication of the amount of cut material we'll have" position="center" command="fill" option="q100" class="img-fluid" title="Excess soil" webp="false" >}}
-{{< image src="images/slab/IMG_0871.JPEG" caption="Early indication of the amount of cut material we'll have" position="center" command="fill" option="q100" class="img-fluid" title="Excess soil" webp="false" >}}
+{{< image src="images/slab/IMG_0872.JPEG" caption="Early indication of the amount of cut material we'll have" position="center" command="fill" option="q75" class="img-fluid" title="Excess soil" webp="false" >}}
+{{< image src="images/slab/IMG_0871.JPEG" caption="Early indication of the amount of cut material we'll have" position="center" command="fill" option="q75" class="img-fluid" title="Excess soil" webp="false" >}}
 
 The lesson learn't here is the software (Kubla Cubed) I used to plan and calculate the site cut/fill volumes, only calculates the raw in-situ volume and does not vaclulate any bulking or compaction - you need to do that separately! 
 
-{{< image src="images/slab/DJI_0873.JPEG" caption="End result of the site cut & 600sqm clay stockpile" position="center" command="fill" option="q100" class="img-fluid" title="Excess soil" webp="false" >}}
+{{< image src="images/slab/DJI_0873.JPEG" caption="End result of the site cut & 600sqm clay stockpile" position="center" command="fill" option="q75" class="img-fluid" title="Excess soil" webp="false" >}}
 
 The result was this stockpile of clay which was approximately 600sqm, a little bit more than my 120sqm original estimate. Whoops!
 
@@ -57,14 +57,14 @@ I originally budgeted $7,500 for under slab based on retail/Google pricing, but 
 
 When cladding goes in, a slab edge detail will go in (XPS). You'd normally do this detail inside your boxed frame before the pour - but for a reason I can't remember, builder and I decided to wait to do this later. During the pour, I ensured the slab edge was kept clean and tidy so we'll have no issues getting the insulation flush against the edge.
 
-{{< image src="images/slab/Slab-edge-cleanness.jpg" caption="Clean slab edge to allow for future edge insulation" position="center" command="fill" option="q100" class="img-fluid" title="Clean slab edges" webp="false" >}}
+{{< image src="images/slab/Slab-edge-cleanness.jpg" caption="Clean slab edge to allow for future edge insulation" position="center" command="fill" option="q75" class="img-fluid" title="Clean slab edges" webp="false" >}}
 
 
 ## Slab Set Downs
 
 Our slab has an unusual detail: a 40mm set-down through the timber flooring areas. Normally you'd only see this in wet areas, so the tile build-up lands at the same finished floor level as everything else.
 
-{{< image src="images/slab/Slab_setdowns.jpg" caption="Timber floor set down area marked in red" position="center" command="fill" option="q100" class="img-fluid" title="Timber floor area set down" webp="false" >}}
+{{< image src="images/slab/Slab_setdowns.jpg" caption="Timber floor set down area marked in red" position="center" command="fill" option="q75" class="img-fluid" title="Timber floor area set down" webp="false" >}}
 
 We wanted the feel of a traditional sprung floor with a herringbone layout, and that rules out direct-sticking to the slab — it needs a batten subfloor. After a lot of conversations with various trades and suppliers, we landed on this spec:
 
@@ -72,7 +72,7 @@ We wanted the feel of a traditional sprung floor with a herringbone layout, and 
 * 9mm subfloor
 * 13mm battens on 10mm foam pads
 
-{{< image src="images/slab/Timberfloor-Detail.jpg" caption="Timber floor specification with battens, and foam pads" position="center" command="fill" option="q100" class="img-fluid" title="Timber floor specification" webp="false" >}}
+{{< image src="images/slab/Timberfloor-Detail.jpg" caption="Timber floor specification with battens, and foam pads" position="center" command="fill" option="q75" class="img-fluid" title="Timber floor specification" webp="false" >}}
 
 The trade-off is real: battens and an air gap sit between the slab and the timber, so the hydronic output through these areas drops considerably. That's a deliberate choice. We get comfortable underfoot warmth without
 overheating the timber, and the wood heater covers air temperature when we want it.
@@ -105,7 +105,7 @@ The heat source is still open, and comes down to how much solar we get in. Hit t
 I have extensive as-built documentation detailing exactly where every pipe is, including a 3D survey georeferenced to MGA2020 Zone 55 — the same coordinate system as the surveyor's setout. A surveyor picked up five GCPs on the property and I targeted them permanently, so I can re-fly the site any time and have every survey land in the same coordinate space as the last.
 
 Here is the 3D model in Pix4DMatic. I also have the same for stormwater & drainage, and using it to track our cut/fill volumes.
-{{< image src="images/slab/Hydronic_Survey.jpg" caption="Photogrammertyu survey of hydronic heating pipes & locations" position="center" command="fill" option="q100" class="img-fluid" title="Excess soil" webp="false" >}}
+{{< image src="images/slab/Hydronic_Survey.jpg" caption="Photogrammertyu survey of hydronic heating pipes & locations" position="center" command="fill" option="q75" class="img-fluid" title="Excess soil" webp="false" >}}
 
 ## Electronics & Monitoring
 
@@ -134,10 +134,10 @@ After the slab was poured, it was wrapped and protected with film and excess EPS
 
 I was monitoring local conditions, and conditions under the film pretty closely. Target window ended up being 11 days wrapped.
 
-{{< image src="images/slab/DJI_0679.JPEG" caption="Wrapped slap after the pour" position="center" command="fill" option="q100" class="img-fluid" title="Wrapped & protected slab" webp="false" >}}
+{{< image src="images/slab/DJI_0679.JPEG" caption="Wrapped slap after the pour" position="center" command="fill" option="q75" class="img-fluid" title="Wrapped & protected slab" webp="false" >}}
 
 After being protected for 11 days, this is what it looked like after I removed the wrapping; it's pretty much perfect.
-{{< image src="images/slab/IMG_2057.JPEG" caption="First look at slap after unwrapping it after 11 days" position="center" command="fill" option="q100" class="img-fluid" title="First look at unwrapped slab" webp="false" >}}
+{{< image src="images/slab/IMG_2057.JPEG" caption="First look at slap after unwrapping it after 11 days" position="center" command="fill" option="q75" class="img-fluid" title="First look at unwrapped slab" webp="false" >}}
 
 
 ## Image Gallery
