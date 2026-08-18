@@ -24,6 +24,6 @@ Open new Terminal:
 cd D:\dev
 git clone https://github.com/michaelp85/3malbec.com.git
 cd 3malbec.com
-npm install
+npm  install
 npm run dev
 ```

@@ -1,6 +1,27 @@
 {{ define "main" }}
   {{ partial "page-header" . }}
 
+<style>
+  #bd-email {
+    --bd-bg: #ffffff;
+    --bd-fg: #111827;
+    --bd-border: #d1d5db;
+
+    width: 100%;
+    max-width: 24rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--bd-border);
+    background-color: var(--bd-bg);
+    color: var(--bd-fg);
+    font: inherit;
+  }
+  .dark #bd-email {
+    --bd-bg: #4b4b4b;
+    --bd-fg: #f3f4f6;
+    --bd-border: #f3f4f6;
+  }
+</style>
 
   <section class="section">
     <div class="container">
