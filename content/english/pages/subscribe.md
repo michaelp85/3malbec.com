@@ -5,7 +5,9 @@ description: "Subscribe to receive email notifications."
 draft: false
 ---
 
-Subscribe by email to receive notifications for any new blog posts. I won't use your email for anything else.
+Subscribe to receive notifications for any new blog posts. I have nothing to sell and won't use your email for anything else. 
+
+**After you subscribe below, you'll need to double confirm by clicking a link emailed to you.**
 
 <form action="https://buttondown.com/api/emails/embed-subscribe/mpasqualone" method="post" class="embeddable-buttondown-form">
     <div class="mb-6">
