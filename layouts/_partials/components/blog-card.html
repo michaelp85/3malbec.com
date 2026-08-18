@@ -5,7 +5,7 @@
   {{ $index = .Index }}
 {{ end }}
 
-<div class="bg-body dark:bg-darkmode-body">
+<div class="bg-body dark:bg-darkmode-body flex flex-1 flex-col items-stretch">
   {{ $imagePath := $page.Params.image }}
   {{ if $imagePath }}
     {{ $imagePath = strings.TrimPrefix "/" $imagePath }}
@@ -50,8 +50,8 @@
     </ul>
   {{ end }}
   <p class="mb-6">{{ $page.Summary | plainify }}</p>
-  <a class="btn btn-outline-primary btn-sm" href="{{ $page.RelPermalink }}">
+  <a class="btn btn-outline-primary btn-sm self-start mt-auto" href="{{ $page.RelPermalink }}">
     {{ T "read_more" }}
   </a>
-  <hr style="color: #333; margin-top: 22px;">
+  <hr class="border-t border-border dark:border-darkmode-border pt-0 mt-10" />
 </div>

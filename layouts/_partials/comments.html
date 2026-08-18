@@ -1,0 +1,21 @@
+
+<div id="remark42" class="mt-12"></div>
+<script>
+  var remark_config = {
+    host: {{ site.Params.remark42.host }},
+    site_id: {{ site.Params.remark42.site_id }},
+    url: {{ .Permalink }},
+    components: ["embed"],
+    max_shown_comments: 20,
+    theme: document.documentElement.classList.contains("dark") ? "dark" : "light",
+    locale: "en"
+  };
+  (function(c) {
+    for (var i = 0; i < c.length; i++) {
+      var d = document, s = d.createElement("script");
+      s.src = remark_config.host + "/web/" + c[i] + ".js";
+      s.defer = true;
+      (d.head || d.body).appendChild(s);
+    }
+  })(remark_config.components || ["embed"]);
+</script>

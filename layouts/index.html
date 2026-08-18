@@ -32,7 +32,7 @@
             {{ $pages := sort (where .Site.RegularPages "Section" "blog") "Date" "desc" }}
             {{ $paginator := .Paginate $pages }}
             {{ range $index, $page := $paginator.Pages }}
-              <div class="md:col-6 mb-14">
+              <div class="md:col-6 mb-14 flex">
                 {{ partial "components/blog-card" $page }}
               </div>
             {{ end }}
@@ -43,8 +43,8 @@
         <div class="lg:col-4">
           <!-- Email subscribe -->
           <div class="mb-8">
-            <h5 class="mb-6">Get Notified About New Posts</h5>
-            <small>Get notified by email when we publish new posts.</small>
+            <h5 class="mb-6">Get Notified</h5>
+            <small>Get notified by email when I publish new posts.</small>
             <div class="bg-light dark:bg-darkmode-light rounded p-8">
               <form action="https://buttondown.com/api/emails/embed-subscribe/mpasqualone" method="post" class="embeddable-buttondown-form">
                   <div class="mb-6">

@@ -89,6 +89,10 @@ baidu = ""    # Your verification code
 facebook = "" # Your verification code
 mastodon = "" # Your verification code
 
+[remark42]
+host = "https://remark42-production-ff26.up.railway.app"
+site_id = "remark"
+
 # cookies
 # cookies module: https://github.com/gethugothemes/hugo-modules/tree/master/components/cookie-consent
 [cookies]
@@ -125,5 +129,5 @@ mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074"
 # OpenRemark Comments
 [open_remark]
 enable = false
-site_key = "cmq51sse6000504l2761vcywi"                 # your site key from the OpenRemark dashboard
-embed_url = "https://open-remark.zeon.studio/embed.js" # OpenRemark embed.js URL | Make sure it didn't change
+site_key = ""                 # your site key from the OpenRemark dashboard
+embed_url = "" # OpenRemark embed.js URL | Make sure it didn't change
