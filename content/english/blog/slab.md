@@ -48,17 +48,13 @@ I originally budgeted $7,500 for under slab based on retail/Google pricing, but 
 
 Our slab has an unusual detail: a 40mm set-down through the timber flooring areas. Normally you'd only see this in wet areas, so the tile build-up lands at the same finished floor level as everything else.
 
+{{< image src="images/slab/Slab_setdowns.jpg" caption="Timber floor set down area marked in red" position="center" command="fill" option="q100" class="img-fluid" title="Timber floor area set down" webp="false" >}}
+
 We wanted the feel of a traditional sprung floor with a herringbone layout, and that rules out direct-sticking to the slab — it needs a batten subfloor. After a lot of conversations with various trades and suppliers, we landed on this spec:
 
 * 18mm timber laid in herringbone
 * 9mm subfloor
 * 13mm battens on 10mm foam pads
-{{< image src="images/slab/Slab_setdowns.jpg" caption="Timber floor set down area marked in red" position="center" command="fill" option="q100" class="img-fluid" title="Timber floor area set down" webp="false" >}}
-
-However, we want the feel of a traditional spriung timber floor with herringbone layout. This requires either direct stick, and/or a subfloor. After a lot of conversations with various professionals, we've gone with this detail:
-* 18mm timber laid in herringbone
-* 9mm subfloor
-* 13mm timber batten on 10mm foam pads
 
 {{< image src="images/slab/Timberfloor-Detail.jpg" caption="Timber floor specification with battens, and foam pads" position="center" command="fill" option="q100" class="img-fluid" title="Timber floor specification" webp="false" >}}
 
