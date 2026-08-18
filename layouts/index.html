@@ -20,6 +20,20 @@
         </div>
         <!-- sidebar -->
         <div class="lg:col-4">
+          <!-- Email subscribe -->
+          <div class="mb-8">
+            <h5 class="mb-6">Get Notified About New Posts</h5>
+            <small>Get notified by email when we publish new posts.</small>
+            <div class="bg-light dark:bg-darkmode-light rounded p-8">
+              <form action="https://buttondown.com/api/emails/embed-subscribe/mpasqualone" method="post" class="embeddable-buttondown-form">
+                  <div class="mb-6">
+                      <label for="bd-email" class="form-label">Your email <span class="text-red-500">*</span></label>
+                      <input id="bd-email" name="email" class="form-input" type="text">
+                  </div>
+                  <button type="submit" class="btn btn-primary" value="Subscribe">Subscribe</button>
+              </form>
+            </div>
+          </div>
           <!-- widget -->
           {{ $widget:= site.Params.widgets.sidebar }}
           {{ partialCached "widgets/widget-wrapper" ( dict "Widgets" $widget "Scope" . ) }}
