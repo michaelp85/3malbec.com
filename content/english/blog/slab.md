@@ -1,5 +1,5 @@
 ---
-title: "Slab"
+title: "The Slab"
 slug: 'slab'
 meta_title: ""
 description: "Everything under the slab: drainage, hydronic pipework, and the concrete that covers it."
@@ -37,6 +37,15 @@ The result was this stockpile of clay which was approximately 600sqm, a little b
 ## Drainage, Stormwater, Trenching & Electrical Conduits
 
 (Need to add details here, was a lot more work then I was expecting)
+
+* Upsized the lead-in electrical conduit from 50mm (spec'ed by electrican) to 67mm HD. It's a 48m run, with a 90 and 45-degree sweep - so wanted to be extra sure we could pull cable through.
+* NBN conduit installed.
+* 32mm MD conduit for fiber and data.
+* Pre-provision conduit laid for future shed/guest house.
+* I surveyoed all conduit runs.
+* Covered all conduit with gravel, before back filling.
+
+I've left the main trench open to the front of the property. I am still deciding on some details for front gate, so want to keep it open so can sort out electrical and data at the front of the property.
 
 ## Slab Insulation
 
