@@ -44,6 +44,13 @@ Under the slab, including under ribs went in 50mm EPS (M-Grade, 105 kPa, R1.25).
 
 I originally budgeted $7,500 for under slab based on retail/Google pricing, but once I setup trade accounts I got this cost down to $3800 delivered.
 
+**Slab Edge**
+
+When cladding goes in, a slab edge detail will go in (XPS). You'd normally do this detail inside your boxed frame before the pour - but for a reason I can't remember, builder and I decided to wait to do this later. During the pour, I ensured the slab edge was kept clean and tidy so we'll have no issues getting the insulation flush against the edge.
+
+{{< image src="images/slab/Slab-edge-cleanness.jpg" caption="Clean slab edge to allow for future edge insulation" position="center" command="fill" option="q100" class="img-fluid" title="Clean slab edges" webp="false" >}}
+
+
 ## Slab Set Downs
 
 Our slab has an unusual detail: a 40mm set-down through the timber flooring areas. Normally you'd only see this in wet areas, so the tile build-up lands at the same finished floor level as everything else.
