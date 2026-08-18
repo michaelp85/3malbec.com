@@ -12,8 +12,8 @@ url = "/about"
 weight = 2
 
 [[main]]
-name = "Budget"
-url = "/budget"
+name = "Live Stream"
+url = "/live-stream"
 weight = 3
 
 [[main]]
@@ -39,6 +39,11 @@ url = "/website-details"
 weight = 3
 
 [[footer]]
+name = "Live Stream"
+url = "/live-stream"
+weight = 4
+
+[[footer]]
 name = "Privacy Policy"
 url = "/privacy-policy"
-weight = 4
+weight = 5
