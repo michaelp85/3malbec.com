@@ -29,12 +29,14 @@ We started the site cut on 9th July, and almost immediately I realised there was
 
 The lesson learn't here is the software (Kubla Cubed) I used to plan and calculate the site cut/fill volumes, only calculates the raw in-situ volume and does not vaclulate any bulking or compaction - you need to do that separately! 
 
-{{< image src="images/slab/DJI_0873.JPEG" caption="End result" position="center" command="fill" option="q100" class="img-fluid" title="Excess soil" webp="false" >}}
+{{< image src="images/slab/DJI_0873.JPEG" caption="End result of the site cut & 600sqm clay stockpile" position="center" command="fill" option="q100" class="img-fluid" title="Excess soil" webp="false" >}}
 
 The result was this stockpile of clay which was approximately 600sqm, a little bit more than my 120sqm original estimate. Whoops!
 
 
-## Drainage, Stormwater and Trenching
+## Drainage, Stormwater, Trenching & Electrical Conduits
+
+(Need to add details here, was a lot more work then I was expecting)
 
 ## Slab Insulation
 
@@ -44,7 +46,24 @@ I originally budgeted $7,500 for under slab based on retail/Google pricing, but 
 
 ## Slab Set Downs
 
-Info about set downs, and why?
+Our slab has an unusual detail: a 40mm set-down through the timber flooring areas. Normally you'd only see this in wet areas, so the tile build-up lands at the same finished floor level as everything else.
+
+We wanted the feel of a traditional sprung floor with a herringbone layout, and that rules out direct-sticking to the slab — it needs a batten subfloor. After a lot of conversations with various trades and suppliers, we landed on this spec:
+
+* 18mm timber laid in herringbone
+* 9mm subfloor
+* 13mm battens on 10mm foam pads
+{{< image src="images/slab/Slab_setdowns.jpg" caption="Timber floor set down area marked in red" position="center" command="fill" option="q100" class="img-fluid" title="Timber floor area set down" webp="false" >}}
+
+However, we want the feel of a traditional spriung timber floor with herringbone layout. This requires either direct stick, and/or a subfloor. After a lot of conversations with various professionals, we've gone with this detail:
+* 18mm timber laid in herringbone
+* 9mm subfloor
+* 13mm timber batten on 10mm foam pads
+
+{{< image src="images/slab/Timberfloor-Detail.jpg" caption="Timber floor specification with battens, and foam pads" position="center" command="fill" option="q100" class="img-fluid" title="Timber floor specification" webp="false" >}}
+
+The trade-off is real: battens and an air gap sit between the slab and the timber, so the hydronic output through these areas drops considerably. That's a deliberate choice. We get comfortable underfoot warmth without
+overheating the timber, and the wood heater covers air temperature when we want it.
 
 ## Hydronics
 
@@ -79,7 +98,7 @@ Here is the 3D model in Pix4DMatic. I also have the same for stormwater & draina
 ## Electronics & Monitoring
 
 In the slab is:
-* 2x Temporary sensors from Hydronic supplier.
+* 2x Temporary sensors from hydronic supplier.
 * 6x Temperture sensors installed by me, at varying depths and zones/locations. These will be brought into our KNX system.
 
 ## Concrete Pour Day
