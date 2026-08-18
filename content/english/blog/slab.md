@@ -48,15 +48,20 @@ Info about set downs, and why?
 
 ## Hydronics
 
-Installed was in-slab (not in screed) hydronic system. I did the calculations and looping diagrams myself using LoopCAD and had a local company validate my design.
+We went in-slab rather than in-screed — more thermal mass and a slower response, which suits a house that holds its temperature.
 
-Spec:
-* Rahua main supply piping.
-* Ideal piping runs, pretty much every run is identical in length.
-* Entire slab is heated except server room and garage.
-* 2x Uponor manifolds, with ideal placements at each 1/3 location of the house. 
+I did the loop calculations and layout myself in LoopCAD, then had a local hydronics company validated the design.
 
-Stage cost: ~$7000 for piping, fittings, manifolds, actuators, pressure guages, etc.
+**Spec**
+
+* Rehau main supply piping
+* Near-identical loop lengths, so the manifolds self-balance
+* Whole slab heated except the server room and garage
+* 2x Uponor manifolds, at the one-third and two-thirds points of the house
+
+Stage cost: ~$7,000 for piping, fittings, manifolds, actuators and pressure gauges.
+
+The heat source is still open, and comes down to how much solar we get in. Hit the target and I can size a buffer tank so it effectively runs for free outside production hours. Fall short and I'll look at a wood or pellet boiler, or possibly both.
 
 ## Electronics & Monitoring
 
