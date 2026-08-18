@@ -38,7 +38,9 @@ The result was this stockpile of clay which was approximately 600sqm, a little b
 
 ## Slab Insulation
 
-Info about slab insulation goes here.
+Under the slab, including under ribs went in 50mm EPS (M-Grade, 105 kPa, R1.25). The engineer spec'ed out SL grade, but we upgraded it (why not? It was a dirt cheap upgrade). I supervised the installation, ensuring that all boards wen't in unbroken, butted up against each other and any cut outs around around piers was done as tight as possible.
+
+I originally budgeted $7,500 for under slab based on retail/Google pricing, but once I setup trade accounts I got this cost down to $3800 delivered.
 
 ## Slab Set Downs
 
@@ -46,11 +48,27 @@ Info about set downs, and why?
 
 ## Hydronics
 
-Info about slab heading here.
+Installed was in-slab (not in screed) hydronic system. I did the calculations and looping diagrams myself using LoopCAD and had a local company validate my design.
+
+Spec:
+* Rahua main supply piping.
+* Ideal piping runs, pretty much every run is identical in length.
+* Entire slab is heated except server room and garage.
+* 2x Uponor manifolds, with ideal placements at each 1/3 location of the house. 
+
+Stage cost: ~$7000 for piping, fittings, manifolds, actuators, pressure guages, etc.
+
+## Electronics & Monitoring
+
+In the slab is:
+* 2x Temporary sensors from Hydronic supplier.
+* 6x Temperture sensors installed by me, at varying depths and zones/locations. These will be brought into our KNX system.
 
 ## Concrete Pour Day
 
-Concrete from Elvin Group.
+Concrete from Elvin Group, 9 Extra-large trucks and approx. 76sqm of concrete went in.
+
+Note to self: Need to get a hold of the delivery dockets.
 
 ## Challenges Here
 
@@ -60,7 +78,7 @@ Concrete from Elvin Group.
 
 ## Protection
 
-Info about slab protections.
+Slab was wrapped
 
 ## Image Gallery
 
