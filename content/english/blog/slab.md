@@ -55,13 +55,26 @@ I did the loop calculations and layout myself in LoopCAD, then had a local hydro
 **Spec**
 
 * Rehau main supply piping
-* Near-identical loop lengths, so the manifolds self-balance
+* Near-identical loop lengths with 16mm piping at 200mm centres, so the manifolds self-balance
 * Whole slab heated except the server room and garage
 * 2x Uponor manifolds, at the one-third and two-thirds points of the house
+
+**Installation, did the pressure hold?**
+
+The slab pour went without a hitch and the pressurised system held the entire time and 2 weeks later with me writing this hasn't lost any pressure.
+
+**Costings**
 
 Stage cost: ~$7,000 for piping, fittings, manifolds, actuators and pressure gauges.
 
 The heat source is still open, and comes down to how much solar we get in. Hit the target and I can size a buffer tank so it effectively runs for free outside production hours. Fall short and I'll look at a wood or pellet boiler, or possibly both.
+
+**Documentation**
+
+I have extensive as-built documentation detailing exactly where every pipe is, including a 3D survey georeferenced to MGA2020 Zone 55 — the same coordinate system as the surveyor's setout. A surveyor picked up five GCPs on the property and I targeted them permanently, so I can re-fly the site any time and have every survey land in the same coordinate space as the last.
+
+Here is the 3D model in Pix4DMatic. I also have the same for stormwater & drainage, and few others.
+{{< image src="images/slab/Hydronic_Survey.jpg" caption="Photogrammertyu survey of hydronic heating pipes & locations" position="center" command="fill" option="q100" class="img-fluid" title="Excess soil" webp="false" >}}
 
 ## Electronics & Monitoring
 
