@@ -1,8 +1,8 @@
 ---
 title: "DA Application - Take 1"
 slug: 'da_application-take-1'
-meta_title: ""
-description: "this is meta description"
+meta_title: "NSW DA Rejected: What Council Sent Back"
+description: "My first NSW Development Application, rejected by Council. What I got wrong on the septic and site plans, and what I'd prepare before lodging again."
 date: 2025-04-01T12:00:00Z
 image: "images/council/2025_04_01-PAN-523504_returned.jpg"
 categories: ["council"]

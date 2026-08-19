@@ -2,7 +2,7 @@
 title: Michael Pasqualone
 email: website@3malbec.com
 image: "/images/michael_avatar.jpg"
-description: this is meta description
+description: "Michael Pasqualone — documenting our energy-efficient modern farmhouse build in NSW. IT background, KNX automation, and a lot of research per decision."
 ---
 
 Father. Husband. Geek. Software Engineer. (In that order).

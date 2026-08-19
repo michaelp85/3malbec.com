@@ -1,8 +1,8 @@
 ---
 title: "The Dying Tree"
 slug: 'the-dying-tree'
-meta_title: ""
-description: "this is meta description"
+meta_title: "Removing a Dead Yellow Box: Arborists and Council"
+description: "Removing a dead Yellow Box from our rural block — the arborist reports council wanted, and how we removed it."
 date: 2020-12-13T05:00:00Z
 image: "images/2020_12_13-Yellowbox_Tree.jpeg"
 categories: ["landscaping", "council"]

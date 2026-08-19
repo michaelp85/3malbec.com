@@ -1,8 +1,8 @@
 ---
 title: "The Slab"
 slug: 'slab'
-meta_title: ""
-description: "Everything under the slab: drainage, hydronic pipework, and the concrete that covers it."
+meta_title: "Slab Pour: Drainage, Insulation and Hydronic Loops"
+description: "Everything under the slab on our rural NSW build — stormwater drainage, underslab insulation, hydronic pipework, and pour day itself."
 date: 2026-08-13T12:00:00Z
 image: "images/slab/01.jpeg"
 categories: ["slab", "insulation", "hydronics", "heating"]

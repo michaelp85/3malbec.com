@@ -1,8 +1,8 @@
 ---
 title: "DA Approved"
 slug: 'da_approved'
-meta_title: ""
-description: "this is meta description"
+meta_title: "NSW DA Approved: Timeline and What It Took"
+description: "Council approved our Development Application for a rural build in NSW. How long it took from lodgement, and what the second attempt got right."
 date: 2025-10-28T12:00:00Z
 image: "images/council/2025_10_28-PAN-542856-Approved.png"
 categories: ["council"]

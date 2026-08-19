@@ -2,7 +2,7 @@
 title: "Site Cut & Miscalculations"
 slug: 'site-cut'
 meta_title: ""
-description: "Everything under the slab: drainage, hydronic pipework, and the concrete that covers it."
+description: "Site Cut: How I Got the Soil Volume Wrong"
 date: 2026-07-13T12:00:00Z
 image: "images/site-cut/DJI_0905.JPEG"
 categories: ["earthmoving"]

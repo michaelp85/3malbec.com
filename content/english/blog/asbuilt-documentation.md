@@ -1,8 +1,8 @@
 ---
 title: "As Built Documentation & Drone Surveys"
 slug: 'asbuilt-documentation'
-meta_title: ""
-description: "Everything under the slab: drainage, hydronic pipework, and the concrete that covers it."
+meta_title: "As-Built Documentation for an Owner-Build"
+description: "What I'm recording as we build — as-built 3D model, survey data, and photos — plus what I learned about surveying accuracy the hard way."
 date: 2026-08-18T12:00:00Z
 image: "images/documentation/Framing-Overview.jpg"
 categories: ["documentation", "survey", "technology"]

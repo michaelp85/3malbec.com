@@ -1,7 +1,7 @@
 ---
 title: "Hi, Jessica & Michael Pasqualone Here!"
-meta_title: "About"
-description: "About Jessica & Michael Pasqualone, and our house build"
+meta_title: "About the Build: Energy-Efficient house in NSW"
+description: "Why we're building a modern house focused on orientation, insulation and passive performance — and documenting every decision along the way."
 image: "/images/jessica_and_michael.jpg"
 draft: false
 ---
