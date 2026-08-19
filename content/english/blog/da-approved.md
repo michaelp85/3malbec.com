@@ -10,7 +10,7 @@ author: "Michael"
 tags: ["council"]
 summary: "Council approves the DA!"
 draft: false
-ShowToc: false
+toc: false
 ---
 
 We're approved!

@@ -10,6 +10,7 @@ author: "Michael"
 tags: ["council"]
 summary: "My second, and accepted attempt at DA with fixes to septic plans, site plan and other additional information requested by Council."
 draft: false
+toc: false
 ---
 
 After my first DA required some tweaks to the effluent disposal area and a few adjustments to the site plan, I went back to the drawing board. Armed with an updated report from our wastewater engineer and a corrected site layout, I was ready to have another crack at it.

@@ -10,6 +10,7 @@ author: "Michael"
 tags: ["council"]
 summary: "My first ever attempt at submitting a Development Application."
 draft: false
+toc: false
 ---
 
 This was my first ever attempt at submitting a Development Application via the NSW Planning Portal. I had come prepared with all the required information, including:

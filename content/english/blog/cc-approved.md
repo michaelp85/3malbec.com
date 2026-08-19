@@ -10,7 +10,7 @@ author: "Michael"
 tags: ["council"]
 summary: "Construction Certificate from CBS has been issued"
 draft: false
-ShowToc: false
+toc: false
 ---
 
 Construction Certificate Approved!

@@ -8,7 +8,7 @@ image: "images/slab/01.jpeg"
 categories: ["slab", "insulation", "hydronics", "heating"]
 author: "Michael"
 tags: ["slab"]
-summary: "Drainage, hydronic heating, and pour day - how our slab came together after weeks of work."
+summary: "All the work to get drainage, hydronic heating, slab insulation in, and pour day - how our slab came together after weeks of work."
 draft: false
 ShowToc: false
 gallery:
@@ -50,6 +50,9 @@ I've left the main trench open to the front of the property. I am still deciding
 ## Slab Insulation
 
 Under the slab, including under ribs went in 50mm EPS (M-Grade, 105 kPa, R1.25). The engineer spec'ed out SL grade, but we upgraded it (why not? It was a dirt cheap upgrade). I supervised the installation, ensuring that all boards wen't in unbroken, butted up against each other and any cut outs around around piers was done as tight as possible.
+
+{{< image src="images/slab/underslab-insulation.jpg" caption="Underslab insulation detail" position="center" command="fill" option="q75" class="img-fluid" title="Underslab insulation" webp="false" >}}
+
 
 I originally budgeted $7,500 for under slab based on retail/Google pricing, but once I setup trade accounts I got this cost down to $3800 delivered.
 
@@ -111,7 +114,7 @@ Here is the 3D model in Pix4DMatic. I also have the same for stormwater & draina
 
 In the slab is:
 * 2x Temporary sensors from hydronic supplier.
-* 6x Temperture sensors installed by me, at varying depths and zones/locations. These will be brought into our KNX system.
+* 6x Temperture sensors (DS18B20) installed by me, at varying depths and zones/locations. These will be brought into our KNX system.
 
 ## Concrete Pour Day
 
@@ -126,19 +129,19 @@ Note to self: Need to get a hold of the delivery dockets.
 ## Tips and Tricks
 
 * Organise/pay for concrete yourself, you save big here! Our concrete bill was TBC.
-* Monitor the pour, and keep a keen eye on any conduit, especially flexible conduits penetrations - ensure they don't get buried during the pour!
+* Monitor the pour carefully and keep a keen eye that conduit ends don't get buried, especially flexible conduits penetrations - ensure they don't get buried during the pour!
+* Chip away any excess concrete from the edges and general tidy/up.
 
-## Protection
+## Post-Slab Weather Protection
 
 After the slab was poured, it was wrapped and protected with film and excess EPS foam on edges of the slab that were in the direction of the rain. This should greatly improve the surface quality, prevent cracking and allow the concrete to achive it's rated strength.
 
-I was monitoring local conditions, and conditions under the film pretty closely. Target window ended up being 11 days wrapped.
+Weather was doing most of the work: 10–12°C maxima and lows and frost overnight. I lifted a random patch of the film every few days to check for condensation on the underside and a damp surface, and left the pooled rainwater where it was. Came off at day 11.
 
-{{< image src="images/slab/DJI_0679.JPEG" caption="Wrapped slap after the pour" position="center" command="fill" option="q75" class="img-fluid" title="Wrapped & protected slab" webp="false" >}}
+{{< image src="images/slab/DJI_0679.JPEG" caption="Wrapped slab after the pour" position="center" command="fill" option="q75" class="img-fluid" title="Wrapped & protected slab" webp="false" >}}
 
 After being protected for 11 days, this is what it looked like after I removed the wrapping; it's pretty much perfect.
 {{< image src="images/slab/IMG_2057.JPEG" caption="First look at slap after unwrapping it after 11 days" position="center" command="fill" option="q75" class="img-fluid" title="First look at unwrapped slab" webp="false" >}}
-
 
 ## Image Gallery
 
