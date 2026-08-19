@@ -41,7 +41,7 @@
                 {{ partial "image.html" (dict "Src" "images/michael_avatar.jpg" "Alt" "Michael" "Width" 100 "Height" 100 "Command" "Fill" "Class" "w-[50px] h-[50px] rounded-full" "Context" .) }}
               </div>
               <div class="ml-4">
-                <h3 class="h5 font-primary text-left font-semibold">Michael Pasqualone</h3>
+                <h3 class="h5 font-primary text-left font-semibold"><a href="/authors/michael/">Michael Pasqualone</a></h3>
                 <p class="text-text-dark dark:text-white text-left">Dad, husband, owner, co-project manager &amp; an IT guy</p>
               </div>
             </div>
@@ -51,7 +51,7 @@
               <a href="/categories/slab/" class="mt-6 block w-full rounded-xl bg-green-600 px-6 py-3.5 text-center text-white shadow-lg transition hover:bg-green-700 md:absolute md:-bottom-2 md:right-8 md:mt-0 md:block md:w-auto">
                 <span class="block text-base font-bold md:text-xl text-left">Status: {{ .text }}</span>
 
-                <span class="block text-sm opacity-80 md:text-sm text-left"><i>Budget:</i> Under budget | <i>Updated:</i> {{ .updated.Format "Mon 2 Jan 2006" }}</span>
+                <span class="block text-sm opacity-80 md:text-sm text-left"><i>Budget:</i> {{ .budget }} | <i>Updated:</i> {{ .updated.Format "Mon 2 Jan 2006" }}</span>
               </a>
               {{ end }}
             {{ end }}
