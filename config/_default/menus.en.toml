@@ -8,22 +8,22 @@ weight = 1
 
 [[main]]
 name = "About"
-url = "/about"
+url = "/about/"
 weight = 2
 
 [[main]]
 name = "Live Stream"
-url = "/live-stream"
+url = "/live-stream/"
 weight = 3
 
 [[main]]
 name = "Resources"
-url = "/Resources"
+url = "/Resources/"
 weight = 4
 
 [[main]]
 name = "Subscribe"
-url = "/subscribe"
+url = "/subscribe/"
 weight = 5
 
 
@@ -31,23 +31,23 @@ weight = 5
 # footer menu
 [[footer]]
 name = "About"
-url = "/about"
+url = "/about/"
 weight = 1
 
 # footer menu
 [[footer]]
 name = "Resources"
-url = "/resources"
+url = "/resources/"
 weight = 2
 
 [[footer]]
 name = "Website Details"
-url = "/website-details"
+url = "/website-details/"
 weight = 3
 
 [[footer]]
 name = "Live Stream"
-url = "/live-stream"
+url = "/live-stream/"
 weight = 4
 
 [[footer]]
