@@ -86,7 +86,12 @@ We went in-slab rather than in-screed — more thermal mass and a slower respons
 
 I did the loop calculations and layout myself in LoopCAD, then had a local hydronics company validated the design.
 
-**Spec**
+{{< image src="images/slab/LoopCad-Drawing-Example.png" caption="LoopCAD drawing & thermal calculations, this does not match the as-built yet - I need to update it" position="center" command="fill" option="q75" class="img-fluid" title="LoopCAD Drawing" webp="false" >}}
+
+**Note to Self:** I need to update my LoopCAD drawings to match the as-built.
+
+
+**Spec:**
 
 * Rehau main supply piping
 * Near-identical loop lengths with 16mm piping at 200mm centres, so the manifolds self-balance
@@ -95,7 +100,7 @@ I did the loop calculations and layout myself in LoopCAD, then had a local hydro
 
 **Installation, did the pressure hold?**
 
-The slab pour went without a hitch and the pressurised system held the entire time and 2 weeks later with me writing this hasn't lost any pressure.
+The slab pour went without a hitch and pressuris held the entire time and 2 weeks later with me writing this hasn't lost any pressure.
 
 **Costings**
 
@@ -118,9 +123,11 @@ In the slab is:
 
 ## Concrete Pour Day
 
-Concrete from Elvin Group, 9 Extra-large trucks and approx. 76sqm of concrete went in.
+Concrete from Elvin Group, 9 Extra-large trucks and approx. 76sqm of concrete went in. Between 7am and 12-noon, pour went smoothly and the team the builder employed were top-notch!
 
-Note to self: Need to get a hold of the delivery dockets.
+**Note to self:**
+* Need to get a hold of the delivery dockets.
+* Need to find out name of concreters, and leave them a fantastic review.
 
 ## Challenges Here
 
