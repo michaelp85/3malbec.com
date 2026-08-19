@@ -29,6 +29,14 @@ custom_script = ""
 # copyright
 copyright = "&copy; 2020 - 2026 A Pasqualone Family Blog - Built with [Hugo](https://gohugo.io/) for Speed | [Website Github Repo](https://github.com/michaelp85/3malbec.com)"
 
+# Front page status badge
+[status_badge]
+enable = true
+text = "Slab curing"
+budget = "Under budget"
+updated = 2026-08-18T00:00:00+10:00
+link = "/categories/slab/"
+
 # Preloader
 # preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader
 [preloader]
