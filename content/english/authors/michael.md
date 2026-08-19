@@ -1,8 +1,8 @@
 ---
 title: Michael Pasqualone
 email: website@3malbec.com
-image: "/images/avatar.png"
+image: "/images/michael_avatar.jpg"
 description: this is meta description
 ---
 
-Father. Software Engineer. Volunteer. Cricketer. (In that order)
+Father. Husband. Geek. Software Engineer. (In that order)
