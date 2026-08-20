@@ -51,6 +51,11 @@ url = "/live-stream/"
 weight = 4
 
 [[footer]]
+name = "Contact"
+url = "/contact/"
+weight = 5
+
+[[footer]]
 name = "Privacy Policy"
 url = "/privacy-policy/"
-weight = 5
+weight = 6
