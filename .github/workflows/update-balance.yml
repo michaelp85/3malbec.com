@@ -1,4 +1,4 @@
-name: Update account balance
+name: Update PocketSmith Account balance
 
 on:
   schedule:
