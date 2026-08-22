@@ -45,3 +45,14 @@ jobs:
           git add data/pocketsmith_balance_history.json
           git commit -m "Update PocketSmith Account balance"
           git push
+
+      # A push made with the default GITHUB_TOKEN (as above) deliberately
+      # does NOT trigger other on:push workflows - this stops accidental
+      # infinite trigger loops. workflow_dispatch is explicitly exempted
+      # from that suppression, so we fire the Pages build ourselves rather
+      # than relying on its push trigger to notice this commit.
+      - name: Trigger Hugo site build
+        if: steps.fetch.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy-hugo-site.yml --ref ${{ github.ref_name }}         
