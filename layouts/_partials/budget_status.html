@@ -1,0 +1,16 @@
+{{ $history := .Site.Data.pocketsmith_balance_history }}
+{{ if $history }}
+  {{/* Sort by date ourselves rather than trusting the file's on-disk
+       order - this way it's correct even if a future script change,
+       manual edit, or stale file ever breaks that ordering. */}}
+  {{ $sorted := sort $history "date" "desc" }}
+  {{ $latest := index $sorted 0 }}
+  {{ $currency := upper $latest.currency }}
+  {{ $status := "" }}
+  {{ if gt $latest.amount 0.0 }}
+    {{ $status = printf "%s underbudget" (transform.Emojify ":thumbsup:") }}
+  {{ else if lt $latest.amount 0.0 }}
+    {{ $status = printf "%s overbudget" (transform.Emojify ":thumbsdown:") }}
+  {{ end }}
+    <span class="balance">${{ lang.FormatNumber 0 $latest.amount }} ({{ $status }})</span>
+{{ end }}
