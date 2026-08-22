@@ -33,7 +33,7 @@ jobs:
         env:
           POCKETSMITH_KEY: ${{ secrets.POCKETSMITH_KEY }}
           POCKETSMITH_ACCOUNT_ID: ${{ secrets.POCKETSMITH_ACCOUNT_ID }}
-        run: python scripts/update_balance.py
+        run: python scripts/pocketsmith_update_balance.py
 
       # Commit only if the balance actually changed - keeps history and any
       # downstream Hugo deploy triggers limited to real updates.
@@ -42,6 +42,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/balance.json
+          git add data/pocketsmith_balance.json
           git commit -m "Update account balance"
           git push
