@@ -36,7 +36,7 @@ API_BASE = "https://api.pocketsmith.com/v2"
 # "id" field of the account you care about - see README.md.
 ACCOUNT_ID = os.environ.get("POCKETSMITH_ACCOUNT_ID")
 
-# Where Hugo will read the data from: {{ .Site.Data.balance_history }}
+# Where Hugo will read the data from: {{ hugo.Data.balance_history }}
 OUTPUT_PATH = Path(__file__).resolve().parent.parent / "data" / "pocketsmith_balance_history.json"
 
 

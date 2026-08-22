@@ -1,4 +1,4 @@
-{{ $history := .Site.Data.pocketsmith_balance_history }}
+{{ $history := hugo.Data.pocketsmith_balance_history }}
 {{ if $history }}
   {{/* Sort by date ourselves rather than trusting the file's on-disk
        order - this way it's correct even if a future script change,

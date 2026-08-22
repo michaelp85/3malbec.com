@@ -1,0 +1,11 @@
+{{/*
+  Shortcode wrapper so the balance can be embedded inside Markdown content
+  pages (which don't process raw Go template syntax like {{ partial ... }}
+  on their own - only layout/template files do). Call from a .md file with:
+ 
+    {{< balance >}}
+ 
+  This just hands off to the actual partial - see layouts/partials/balance.html
+  for the logic that reads data/balance_history.json.
+*/}}
+{{ partial "budget_status.html" . }}

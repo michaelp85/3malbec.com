@@ -11,21 +11,21 @@ I used 2 main methods to cost and budget our build:
 
 As a general rule, I always budgeted for the high end — I'd rather be pleasantly surprised when something comes in cheaper than shocked by how expensive it actually turns out to be.
 
+## Current Budget Status
+
+The headline figure currently is that this project is:
+{{< notice "Current Budget Status" >}}{{< balance >}}{{< /notice >}}
+
+## History
+
+{{< budget_chart >}}
+
+## Detailed Budget Breakdown
+
 Legend:
 * :heavy_check_mark: = Final spend, no more to spend.
 * :heavy_dollar_sign: = More to spend.
 * :crossed_fingers: = *Possibly* more to spend, not sure yet, but "fingers-crossed" likely to be under budget still.
-
-## Current Budget Status
-
-The headline figure currently is that this project is:
-{{< notice "info" >}}
-    {{< balance >}}
-{{< /notice >}}
-
-
-
-## Detailed Budget Breakdowns
 
 ### Council & Pre-Start
 

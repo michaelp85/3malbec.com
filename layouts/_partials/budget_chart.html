@@ -1,0 +1,24 @@
+{{ $history := hugo.Data.pocketsmith_balance_history }}
+{{ if $history }}
+  {{ $sorted := sort $history "date" "asc" }}
+
+  {{ $dates := slice }}
+  {{ $amounts := slice }}
+  {{ $max := 0.0 }}
+  {{ range $sorted }}
+    {{ $dates = $dates | append (printf "%q" .date) }}
+    {{ $amounts = $amounts | append (printf "%.0f" .amount) }}
+    {{ if gt .amount $max }}{{ $max = .amount }}{{ end }}
+  {{ end }}
+  {{ $width := 900 }}
+  {{ $height := 600 }}
+  {{ $backgroundColor := "#ffffff" }}
+  {{ $plotColorPalette := "#D10000" }}
+
+  {{ $frontmatter := printf "---\nconfig:\n    xyChart:\n        width: %d\n        height: %d\n    themeVariables:\n        xyChart:\n            backgroundColor: '%s'\n            plotColorPalette: '%s'\n---\n" $width $height $backgroundColor $plotColorPalette }}
+
+  {{ $chart := printf "%sxychart\n  x-axis [%s]\n  y-axis \"Dollars\" 0 --> %.0f\n  line \"under/over\" [%s]" $frontmatter (delimit $dates ", ") $max (delimit $amounts ", ") }}
+
+  <pre class="mermaid">{{ $chart }}</pre>
+  {{ .Page.Store.Set "hasMermaid" true }}
+{{ end }}
