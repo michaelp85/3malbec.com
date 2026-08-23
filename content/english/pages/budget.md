@@ -53,9 +53,9 @@ The charts and data on this page will update nightly at <a href="https://github.
 
 ## History
 
-**Tip:** A positive number represents a budget savings, and a negative number is an overspend.
+**Tip:** A positive (green line) number represents a budget savings, and a negative number (red line) is an overspend.
 
-{{< budget_chart title="Budget Tracking History" >}}
+{{< budget_chart title="Build Underspend/Overspend Tracking History" >}}
 
 ## Detailed Budget Breakdown
 
@@ -77,7 +77,7 @@ Legend:
 
 | Item | Budget | Actual Spend | Finalised | Notes |
 | --- | ----------- | -- | -- | ---- |
-| Site Cut* | $20,000 | $11,396 | :crossed_fingers: | We saved heaps in this department because I found a local, had a game plan for them and I ensured we didn't need to move any cut materials offsite. |
+| Site Cut | $20,000 | $11,396 | :crossed_fingers: | We saved heaps in this department because I found a local, had a game plan for them and I ensured we didn't need to move any cut materials offsite. |
 | Drainage, Stormwater | $15,000 | $14,600 | :heavy_check_mark: | This line item was the *very* first invoice I received from a trade, and boom! I was pretty much bang on |
 | Underslab Insulation | $7,500 | $3,507 | :heavy_check_mark: | I priced on retail, once I setup trade supply - it came in heaps cheaper. I also bought with 20% wastage, and had heaps left over. |
 | Slab-edge Insulation | $7,500 | | | Not purchased yet, but will be way cheaper than budgeted |
@@ -98,7 +98,7 @@ Legend:
 | 140mm External & 90mm Internal Frames | | | |
 | Roof Trusses | | | |
 | Stuctrual Steel & Timber | | | |
-| Rigid Thermal Boards | | | |
+| Rigid Insulation Panels | | | |
 | Sarking & Tapes | | | |
 | Framing Insulation | | | Foam Gaskets, Tapes, Sealants,etc  |
 
