@@ -51,16 +51,54 @@
     {{ partialCached "essentials/script.html" . }}
 
     {{ if .Store.Get "hasMermaid" }}
-      <style>
-        .mermaid svg {
-          width: 100% !important;
-          height: auto !important;
-          max-width: 100% !important;
-        }
-      </style>
       <script type="module" data-cfasync="false">
         import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
-        mermaid.initialize({ startOnLoad: true });
+
+        // Colors for the balance xychart's __CHART_BG__/__CHART_LINE__
+        // tokens (set in budget_chart.html). Keep in sync if you edit the
+        // tokens there.
+        const CHART_COLORS = {
+          default: { bg: '#ffffff', line: '#D10000' },
+          dark:    { bg: '#1a1a1a', line: '#ff6b6b' },
+        };
+
+        function isDarkMode() {
+          return document.documentElement.classList.contains('dark');
+        }
+
+        async function renderMermaid() {
+          const theme = isDarkMode() ? 'dark' : 'default';
+          const colors = CHART_COLORS[theme];
+          mermaid.initialize({ startOnLoad: false, theme });
+
+          const nodes = document.querySelectorAll('.mermaid');
+          for (const node of nodes) {
+            // Cache the original source once, so re-renders on theme change
+            // always start from the real diagram text, not a previous SVG.
+            if (node.dataset.mermaidSource === undefined) {
+              node.dataset.mermaidSource = node.textContent.trim();
+            }
+
+            // Swap the xychart color tokens for real hex values. This is a
+            // no-op for any diagram that doesn't contain them (e.g. plain
+            // ```mermaid code-fence diagrams, which get their color from
+            // `theme` above instead).
+            const source = node.dataset.mermaidSource
+              .replace('__CHART_BG__', colors.bg)
+              .replace('__CHART_LINE__', colors.line);
+
+            const id = 'mermaid-' + Math.random().toString(36).slice(2);
+            const { svg } = await mermaid.render(id, source);
+            node.innerHTML = svg;
+          }
+        }
+
+        renderMermaid();
+
+        new MutationObserver(renderMermaid).observe(document.documentElement, {
+          attributes: true,
+          attributeFilter: ['class'],
+        });
       </script>
     {{ end }}
   </body>

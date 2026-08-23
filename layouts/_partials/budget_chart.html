@@ -1,23 +1,63 @@
-{{ $history := hugo.Data.pocketsmith_balance_history }}
+{{/*
+  Builds a Mermaid xychart definition from data/pocketsmith_balance_history.json and renders it as a <pre class="mermaid"> block
+  Include with: {{ partial "budget_chart.html" $ }}
+*/}}
+{{ $history := .Site.Data.pocketsmith_balance_history }}
 {{ if $history }}
   {{ $sorted := sort $history "date" "asc" }}
 
   {{ $dates := slice }}
   {{ $amounts := slice }}
   {{ $max := 0.0 }}
+  {{ $latestAmount := 0.0 }}
   {{ range $sorted }}
     {{ $dates = $dates | append (printf "%q" .date) }}
     {{ $amounts = $amounts | append (printf "%.0f" .amount) }}
     {{ if gt .amount $max }}{{ $max = .amount }}{{ end }}
+    {{ $latestAmount = .amount }}
   {{ end }}
+
+  {{/* The sync script only appends a new entry when the balance actually
+       changes, so the last real data point can be several days stale.
+       Add a synthetic "Latest" point that duplicates it, so the line
+       visually extends up to today instead of stopping mid-chart. */}}
+  {{ $dates = $dates | append (printf "%q" "Latest") }}
+  {{ $amounts = $amounts | append (printf "%.0f" $latestAmount) }}
+
+  {{/* Static chart config - edit these to restyle. Kept as variables
+       rather than baked into the printf string below so they're easy
+       to find and change later.
+
+       backgroundColor/plotColorPalette are NOT real colors - Mermaid's
+       xychart type doesn't respond to mermaid.initialize({theme}) at
+       all, so there's no way to make it dark-mode aware at Hugo build
+       time (the site is static; we don't know the visitor's theme
+       yet). Instead these are left as sentinel tokens, and the
+       dark-mode re-render script in baseof.html swaps them for real
+       hex values right before each render, based on the current
+       theme. If you change these token strings, update the matching
+       CHART_COLORS lookup in baseof.html to match. */}}
   {{ $width := 900 }}
   {{ $height := 600 }}
-  {{ $backgroundColor := "#ffffff" }}
-  {{ $plotColorPalette := "#D10000" }}
+  {{ $backgroundColor := "__CHART_BG__" }}
+  {{ $plotColorPalette := "__CHART_LINE__" }}
 
-  {{ $frontmatter := printf "---\nconfig:\n    xyChart:\n        width: %d\n        height: %d\n    themeVariables:\n        xyChart:\n            backgroundColor: '%s'\n            plotColorPalette: '%s'\n---\n" $width $height $backgroundColor $plotColorPalette }}
+  {{ $frontmatter := printf `---
+config:
+    xyChart:
+        width: %d
+        height: %d
+    themeVariables:
+        xyChart:
+            backgroundColor: '%s'
+            plotColorPalette: '%s'
+---
+` $width $height $backgroundColor $plotColorPalette }}
 
-  {{ $chart := printf "%sxychart\n  x-axis [%s]\n  y-axis \"Dollars\" 0 --> %.0f\n  line \"under/over\" [%s]" $frontmatter (delimit $dates ", ") $max (delimit $amounts ", ") }}
+  {{ $chart := printf `%sxychart
+  x-axis [%s]
+  y-axis "Dollars" 0 --> %.0f
+  line "under/over" [%s]` $frontmatter (delimit $dates ", ") $max (delimit $amounts ", ") }}
 
   <pre class="mermaid">{{ $chart }}</pre>
   {{ .Page.Store.Set "hasMermaid" true }}
