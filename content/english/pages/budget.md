@@ -45,10 +45,6 @@ The charts and data on this page will update nightly at <a href="https://github.
             </div>
         </div>
     </div>
-
-
-
-    
 </div>
 
 ## History
