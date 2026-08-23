@@ -2,32 +2,51 @@
   Builds a Mermaid xychart definition from data/pocketsmith_balance_history.json and renders it as a <pre class="mermaid"> block
   Include with: {{ partial "budget_chart.html" $ }}
 */}}
-{{ $history := .Site.Data.pocketsmith_balance_history }}
+{{ $ctx := . }}
+{{ $width := 900 }}
+{{ $height := 600 }}
+{{ $title := "" }}
+{{ if reflect.IsMap . }}
+  {{ $ctx = .Context }}
+  {{ with .Width }}{{ $width = . }}{{ end }}
+  {{ with .Height }}{{ $height = . }}{{ end }}
+  {{ with .Title }}{{ $title = . }}{{ end }}
+{{ end }}
+ 
+{{ $history := $ctx.Site.Data.pocketsmith_balance_history }}
 {{ if $history }}
   {{ $sorted := sort $history "date" "asc" }}
-
+ 
   {{ $dates := slice }}
   {{ $amounts := slice }}
   {{ $max := 0.0 }}
   {{ $latestAmount := 0.0 }}
   {{ range $sorted }}
     {{ $dates = $dates | append (printf "%q" .date) }}
-    {{ $amounts = $amounts | append (printf "%.0f" .amount) }}
+    {{/* Mermaid supports an optional quoted label after each line
+         value ([value "label", ...]) - shown at the point itself, so
+         use it to display the dollar amount on the chart rather than
+         just leaving readers to eyeball the y-axis. */}}
+    {{ $label := printf "$%s" (lang.FormatNumber 0 .amount) }}
+    {{ $amounts = $amounts | append (printf "%.0f %q" .amount $label) }}
     {{ if gt .amount $max }}{{ $max = .amount }}{{ end }}
     {{ $latestAmount = .amount }}
   {{ end }}
-
+ 
   {{/* The sync script only appends a new entry when the balance actually
        changes, so the last real data point can be several days stale.
        Add a synthetic "Latest" point that duplicates it, so the line
        visually extends up to today instead of stopping mid-chart. */}}
+  {{ $latestLabel := printf "$%s" (lang.FormatNumber 0 $latestAmount) }}
   {{ $dates = $dates | append (printf "%q" "Latest") }}
-  {{ $amounts = $amounts | append (printf "%.0f" $latestAmount) }}
-
-  {{/* Static chart config - edit these to restyle. Kept as variables
-       rather than baked into the printf string below so they're easy
-       to find and change later.
-
+  {{ $amounts = $amounts | append (printf "%.0f %q" $latestAmount $latestLabel) }}
+ 
+  {{/* Static chart color config - edit these to restyle. Kept as
+       variables rather than baked into the printf string below so
+       they're easy to find and change later. Width/Height/Title,
+       unlike these, are resolved above from the caller's dict (or
+       default) rather than being fixed here.
+ 
        backgroundColor/plotColorPalette are NOT real colors - Mermaid's
        xychart type doesn't respond to mermaid.initialize({theme}) at
        all, so there's no way to make it dark-mode aware at Hugo build
@@ -37,28 +56,38 @@
        hex values right before each render, based on the current
        theme. If you change these token strings, update the matching
        CHART_COLORS lookup in baseof.html to match. */}}
-  {{ $width := 900 }}
-  {{ $height := 600 }}
   {{ $backgroundColor := "__CHART_BG__" }}
   {{ $plotColorPalette := "__CHART_LINE__" }}
-
+  {{ $titlePadding := 20 }}
+ 
   {{ $frontmatter := printf `---
 config:
     xyChart:
         width: %d
         height: %d
+        titlePadding: %d
     themeVariables:
         xyChart:
             backgroundColor: '%s'
             plotColorPalette: '%s'
 ---
-` $width $height $backgroundColor $plotColorPalette }}
-
-  {{ $chart := printf `%sxychart
-  x-axis [%s]
-  y-axis "Dollars" 0 --> %.0f
-  line "under/over" [%s]` $frontmatter (delimit $dates ", ") $max (delimit $amounts ", ") }}
-
+` $width $height $titlePadding $backgroundColor $plotColorPalette }}
+ 
+  {{/* title is a body directive, not a config key - it has to be its
+       own line inside the chart, same as x-axis/y-axis/line. Build the
+       body as a slice of lines rather than one fixed printf string, so
+       the title line can be left out entirely when no title was
+       passed in, instead of falling back to a default string. */}}
+  {{ $bodyLines := slice "xychart" }}
+  {{ if $title }}
+    {{ $bodyLines = $bodyLines | append (printf "  title %q" $title) }}
+  {{ end }}
+  {{ $bodyLines = $bodyLines | append (printf "  x-axis [%s]" (delimit $dates ", ")) }}
+  {{ $bodyLines = $bodyLines | append (printf `  y-axis "Dollars" 0 --> %.0f` $max) }}
+  {{ $bodyLines = $bodyLines | append (printf `  line "savings" [%s]` (delimit $amounts ", ")) }}
+ 
+  {{ $chart := printf "%s%s" $frontmatter (delimit $bodyLines "\n") }}
+ 
   <pre class="mermaid">{{ $chart }}</pre>
-  {{ .Page.Store.Set "hasMermaid" true }}
+  {{ $ctx.Page.Store.Set "hasMermaid" true }}
 {{ end }}

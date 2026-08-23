@@ -51,7 +51,7 @@
               <div class="mt-6 block w-full rounded-xl bg-green-600 px-6 py-3.5 text-center text-white shadow-lg transition hover:bg-green-700 md:absolute md:-bottom-2 md:right-8 md:mt-0 md:block md:w-auto">
                 <span class="block text-base font-bold md:text-xl text-left">Status: {{ .text }}</span>
 
-                <span class="block text-sm opacity-80 md:text-sm text-left"><a href="/budget/" class="text-white hover:text-green-200"><b>Budget:</b> {{ partial "budget_status.html" $ }}</a> | <b>Updated:</b> {{ .updated.Format "Mon 2 Jan 2006" }}</a></span>
+                <span class="block text-sm opacity-80 md:text-sm text-left"><a href="/budget/" class="text-white hover:text-green-200"><b>Budget Tracker:</b> {{ partial "budget_status.html" $ }}</a> | <b>As-of:</b> {{ .updated.Format "Mon 2 Jan 2006" }}</a></span>
               </div>
               {{ end }}
             {{ end }}

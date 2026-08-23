@@ -1,7 +1,12 @@
 <section>
   <div class="container text-center">
+    {{/* slim_header: true in a page's front matter shrinks the vertical padding on this box */}}
+    {{ $padding := "px-8 py-14" }}
+    {{ if .Params.slim_header }}
+      {{ $padding = "px-8 py-2" }}
+    {{ end }}
     <div
-      class="from-body to-light dark:from-darkmode-body dark:to-darkmode-light rounded-2xl bg-gradient-to-b px-8 py-14">
+      class="from-body to-light dark:from-darkmode-body dark:to-darkmode-light rounded-2xl bg-gradient-to-b {{ $padding }}">
       <h1>{{ T (printf "%s" (lower .Title)) | default .Title | title }}</h1>
       {{ partial "components/breadcrumb" (dict "Context" . "Class" "mt-6") }}
     </div>

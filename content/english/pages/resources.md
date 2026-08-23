@@ -6,9 +6,20 @@ meta_title: "Resources"
 description: "A curated list of the tools, websites, apps, and books we used to plan, design, and manage our energy-efficient house build — from drafting to landscaping."
 # save as draft
 draft: false
+slim_header: true
 ---
 
 Here is a list of resources that I've used for this house build project. {{< lastmod >}}
+
+#### Trades
+
+If I list a trade here, I recommend them. I'll only be listening the trades (and will update this as we go) of the trades that I highly recommend.
+
+- Mat from Drake Earthworks (Mat@drakeearthworks.com.au, 0427101113)
+- Five8 Electrical (https://www.five8electrical.com.au/) - Note, this is not the electrican I am using. I am using my work's commercial electrican who I've worked with for a decade+, but I would recommend Tom & the team to others.
+- A&J Complete Concrete and Civil (admin@ajconcreting.com.au)
+- BM Plumbing & Drainage (ABM: 76 630 554 700)
+- Richard Miller BSc (Ag.) from Land Capability Services (rgmiller@me.com) - For Site & Soil Assessments, On-site Effluent Disposal Engineering
 
 #### Websites
 
@@ -37,5 +48,4 @@ Here is a list of resources that I've used for this house build project. {{< las
 #### Resources & Sevices
 
 - [EzyStrut Cable & Pipe Supports](https://www.ezystrut.com.au/) - Cable trays and supports
-- Richard Miller BSc (Ag.) from Land Capability Services (rgmiller@me.com) - For Site & Soil Assessments, On-site Effluent Disposal Engineering
 - [Red Gum Tree Services](https://redgumtreeservices.com.au/) - Tree health consultation, felling & removal, etc.

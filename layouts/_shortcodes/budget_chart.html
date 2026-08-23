@@ -4,4 +4,7 @@
  
     {{< budget_chart >}}
 */}}
-{{ partial "budget_chart.html" . }}
+{{ $width := .Get "width" | default 900 | int }}
+{{ $height := .Get "height" | default 600 | int }}
+{{ $title := .Get "title" }}
+{{ partial "budget_chart.html" (dict "Context" . "Width" $width "Height" $height "Title" $title) }}
