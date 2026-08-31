@@ -7,7 +7,7 @@ draft: false
 
 
 <figure>
-    <img id="cam" src="https://3malbec.b-cdn.net/latest.jpg" alt="Site camera" width="1440" height="804" decoding="async">
+    <img id="cam" src="https://imagedelivery.net/OL_tkFq35_Yu641_Ab8jLA/latest/public" alt="Site camera" width="1440" height="804" decoding="async">
 </figure>
 
 **Note:** This image will automatically update every 2 minutes between 7am-7pm, and every 10 minutes outside that.
@@ -15,7 +15,7 @@ draft: false
 <script>
 (() => {
   const el = document.getElementById('cam');
-  const src = 'https://3malbec.b-cdn.net/latest.jpg';
+  const src = 'https://imagedelivery.net/OL_tkFq35_Yu641_Ab8jLA/latest/public';
   let busy = false;
 
   const refresh = () => {
