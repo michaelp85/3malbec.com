@@ -1,31 +1,38 @@
 ---
 title: "Live Stream"
 meta_title: "Live Stream"
-description: "What a custom build in Murrumbateman actually costs - a running breakdown by trade, updated as each progress claim lands."
+description: "Live site cameras from our custom home build in Murrumbateman - snapshots update every 2 minutes during the day and every 10 minutes overnight."
 draft: false
 ---
 
-
 <figure>
-    <img id="cam" src="https://imagedelivery.net/OL_tkFq35_Yu641_Ab8jLA/latest/public" alt="Site camera" width="1440" height="804" decoding="async">
+    <img class="livecam" src="https://webcam.3malbec.com/cam1.jpg" alt="Site camera 1" width="1440" height="804" decoding="async">
 </figure>
 
-**Note:** This image will automatically update every 2 minutes between 7am-7pm, and every 10 minutes outside that.
+<figure>
+    <img class="livecam" src="https://webcam.3malbec.com/cam2.jpg" alt="Site camera 2" width="1440" height="804" decoding="async">
+</figure>
+
+**Note:** These images automatically update every 2 minutes between 6am-7pm, and every 10 minutes outside that.
 
 <script>
 (() => {
-  const el = document.getElementById('cam');
-  const src = 'https://imagedelivery.net/OL_tkFq35_Yu641_Ab8jLA/latest/public';
-  let busy = false;
+  const cams = [...document.querySelectorAll('img.livecam')].map(el => ({
+    el,
+    src: el.src.split('?')[0],
+    busy: false,
+  }));
 
-  const refresh = () => {
-    if (busy || document.hidden) return;
-    busy = true;
+  const refreshOne = cam => {
+    if (cam.busy) return;
+    cam.busy = true;
     const next = new Image();
-    next.onload  = () => { el.src = next.src; busy = false; };
-    next.onerror = () => { busy = false; };
-    next.src = `${src}?t=${Date.now()}`;
+    next.onload  = () => { cam.el.src = next.src; cam.busy = false; };
+    next.onerror = () => { cam.busy = false; };
+    next.src = `${cam.src}?t=${Date.now()}`;
   };
+
+  const refresh = () => { if (!document.hidden) cams.forEach(refreshOne); };
 
   setInterval(refresh, 60000);
   document.addEventListener('visibilitychange', () => document.hidden || refresh());
