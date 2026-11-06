@@ -32,9 +32,9 @@ copyright = "&copy; 2020 - 2026 A Pasqualone Family Blog - Built with [Hugo](htt
 # Front page status badge
 [status_badge]
 enable = true
-text = "Slab curing"
+text = "Roof Trusses"
 budget = "Under budget"
-updated = 2026-08-18T00:00:00+10:00
+updated = 2026-11-06T00:00:00+10:00
 link = "/categories/slab/"
 
 # Preloader
