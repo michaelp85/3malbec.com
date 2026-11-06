@@ -32,10 +32,10 @@ copyright = "&copy; 2020 - 2026 A Pasqualone Family Blog - Built with [Hugo](htt
 # Front page status badge
 [status_badge]
 enable = true
-text = "Slab curing"
+text = "Trusses installation"
 budget = "Under budget"
-updated = 2026-08-18T00:00:00+10:00
-link = "/categories/slab/"
+updated = 2026-11-07T00:00:00+10:00
+link = "/categories/framing-trusses/"
 
 # Preloader
 # preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader

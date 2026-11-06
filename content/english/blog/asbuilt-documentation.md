@@ -41,6 +41,9 @@ There's even better accuracy on the x,y plane which is the dimension that matter
 
 {{< image src="images/documentation/3D-vs-Reallife.jpg" caption="My 3D model accuracy vs Real-life, both measured at the same position" position="center" command="fill" option="q75" class="img-fluid" title="3D model accuracy" webp="false" >}}
 
+Here's two surveys a top of each other in QGIS, showing pipe locations vs internal walls. You'll see the accuracy is bang on given none of the features move around like the water pipes on the left and right.
+{{< image src="images/documentation/Pipe-layout-animation.gif" caption="Two surveys a top of each other in QGIS" position="center" command="fill" option="q75" class="img-fluid" title="Overlay of two models" webp="false" >}}
+
 ## Ground Control Points (GCPs)
 
 I've got 6 permanent GCPs on the property and had a qualified surveyor target them for me, plus all the fence posts.
