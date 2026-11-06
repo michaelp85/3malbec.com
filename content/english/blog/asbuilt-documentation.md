@@ -41,6 +41,9 @@ There's even better accuracy on the x,y plane which is the dimension that matter
 
 {{< image src="images/documentation/3D-vs-Reallife.jpg" caption="My 3D model accuracy vs Real-life, both measured at the same position" position="center" command="fill" option="q75" class="img-fluid" title="3D model accuracy" webp="false" >}}
 
+Here is two survey's overlayed a-top of each other in QGIS. This shows the locations of internal walls vs hydronic piping drawn pipes and the accuracy of the survey in the x,y dimension as the water waste pipeson the left, and the on the right don't move between images.
+{{< image src="images/documentation/Pipe-layout-animation.gif" caption="Animation of 2 surveys showing pipe and internal wall locations" position="center" command="fill" option="q75" class="img-fluid" title="Pipe and internal walls locations" webp="false" >}}
+
 ## Ground Control Points (GCPs)
 
 I've got 6 permanent GCPs on the property and had a qualified surveyor target them for me, plus all the fence posts.
